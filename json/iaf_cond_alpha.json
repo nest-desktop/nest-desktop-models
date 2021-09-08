@@ -6,7 +6,7 @@
   "params": [
     {
       "id": "C_m",
-      "label": "capacitance of the membrane",
+      "label": "capacity of the membrane",
       "unit": "pF",
       "value": 250,
       "input": "valueSlider",
