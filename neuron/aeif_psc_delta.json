@@ -1,7 +1,7 @@
 {
   "id": "aeif_psc_delta",
   "elementType": "neuron",
-  "label": "AEIF psc alpha",
+  "label": "AEIF psc delta",
   "recordables": ["V_m", "w"],
   "params": [
     {

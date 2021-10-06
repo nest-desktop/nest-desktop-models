@@ -1,7 +1,7 @@
 {
   "id": "aeif_psc_exp",
   "elementType": "neuron",
-  "label": "AEIF psc alpha",
+  "label": "AEIF psc exp",
   "recordables": ["g_ex", "g_in", "V_m", "w"],
   "params": [
     {
