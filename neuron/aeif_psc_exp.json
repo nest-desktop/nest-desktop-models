@@ -1,5 +1,5 @@
 {
-  "id": "aeif_psc_alpha",
+  "id": "aeif_psc_exp",
   "elementType": "neuron",
   "label": "AEIF psc alpha",
   "recordables": ["g_ex", "g_in", "V_m", "w"],
