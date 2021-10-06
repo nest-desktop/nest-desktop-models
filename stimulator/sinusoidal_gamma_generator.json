@@ -1,8 +1,8 @@
 {
-  "abbreviation": "spg",
-  "id": "sinusoidal_poisson_generator",
+  "abbreviation": "sgg",
+  "id": "sinusoidal_gamma_generator",
   "elementType": "stimulator",
-  "label": "sinusoidal Poisson generator",
+  "label": "sinusoidal gamma generator",
   "recordables": ["rate"],
   "params": [
     {
