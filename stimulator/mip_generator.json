@@ -1,18 +1,27 @@
 {
-  "abbreviation": "pg",
-  "id": "poisson_generator",
+  "abbreviation": "mip",
+  "id": "mip_generator",
   "elementType": "stimulator",
-  "label": "Poisson generator",
+  "label": "MIP generator",
   "params": [
     {
       "id": "rate",
-      "label": "mean firing rate",
+      "label": "mean firing rate of the parent process",
       "unit": "spikes/s",
       "value": 0,
       "input": "valueSlider",
       "max": 10000,
       "min": 0,
       "step": 1
+    },
+    {
+      "id": "p_copy",
+      "label": "copy probability",
+      "value": 1,
+      "input": "valueSlider",
+      "max": 1,
+      "min": 0,
+      "step": 0.01
     },
     {
       "id": "start",

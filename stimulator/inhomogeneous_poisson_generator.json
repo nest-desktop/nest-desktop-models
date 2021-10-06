@@ -1,18 +1,20 @@
 {
-  "abbreviation": "pg",
-  "id": "poisson_generator",
+  "abbreviation": "ipg",
+  "id": "inhomogeneous_poisson_generator",
   "elementType": "stimulator",
-  "label": "Poisson generator",
+  "label": "inhomogeneous Poisson generator",
   "params": [
     {
-      "id": "rate",
-      "label": "mean firing rate",
+      "id": "rate_times",
+      "label": "times at which rate changes",
+      "unit": "ms",
+      "input": "arrayInput"
+    },
+    {
+      "id": "rate_values",
+      "label": "amplitudes of Poisson spike train",
       "unit": "spikes/s",
-      "value": 0,
-      "input": "valueSlider",
-      "max": 10000,
-      "min": 0,
-      "step": 1
+      "input": "arrayInput"
     },
     {
       "id": "start",

@@ -1,47 +1,34 @@
 {
-  "abbreviation": "ac",
-  "id": "ac_generator",
+  "abbreviation": "ppd",
+  "id": "gamma_sup_generator",
   "elementType": "stimulator",
-  "label": "alternating current",
-  "recordables": ["I"],
+  "label": "gamma sup generator",
   "params": [
     {
-      "id": "amplitude",
-      "label": "amplitude of sine current",
-      "unit": "pA",
+      "id": "rate",
+      "label": "mean firing rate of the component processes",
+      "unit": "spikes/s",
       "value": 0,
       "input": "valueSlider",
-      "max": 1000,
-      "min": -1000,
+      "max": 10000,
+      "min": 0,
       "step": 1
     },
     {
-      "id": "frequency",
-      "label": "frequency",
-      "unit": "Hz",
-      "value": 0,
+      "id": "gamma_shape",
+      "label": "shape parameter of component gamma processes",
+      "value": 1,
+      "input": "valueSlider",
+      "max": 10,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "n_proc",
+      "label": "number of superimposed independent component processes",
+      "value": 1,
       "input": "valueSlider",
       "max": 100,
-      "min": 0,
-      "step": 1
-    },
-    {
-      "id": "offset",
-      "label": "constant amplitude offset",
-      "unit": "pA",
-      "value": 0,
-      "input": "valueSlider",
-      "max": 1000,
-      "min": 0,
-      "step": 1
-    },
-    {
-      "id": "phase",
-      "label": "phase of sine current",
-      "unit": "deg",
-      "value": 0,
-      "input": "valueSlider",
-      "max": 360,
       "min": 0,
       "step": 1
     },

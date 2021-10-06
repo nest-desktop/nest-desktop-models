@@ -1,18 +1,21 @@
 {
-  "abbreviation": "pg",
-  "id": "poisson_generator",
+  "abbreviation": "srg",
+  "id": "step_rate_generator",
   "elementType": "stimulator",
-  "label": "Poisson generator",
+  "label": "step rate generator",
+  "recordables": ["rate"],
   "params": [
     {
-      "id": "rate",
-      "label": "mean firing rate",
-      "unit": "spikes/s",
-      "value": 0,
-      "input": "valueSlider",
-      "max": 10000,
-      "min": 0,
-      "step": 1
+      "id": "amplitude_times",
+      "label": "times at which current changes",
+      "unit": "ms",
+      "input": "arrayInput"
+    },
+    {
+      "id": "rate_values",
+      "label": "amplitudes of step current",
+      "unit": "pA",
+      "input": "arrayInput"
     },
     {
       "id": "start",
