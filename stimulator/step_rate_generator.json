@@ -12,7 +12,7 @@
       "input": "arrayInput"
     },
     {
-      "id": "rate_values",
+      "id": "amplitude_values",
       "label": "amplitudes of step current",
       "unit": "pA",
       "input": "arrayInput"
