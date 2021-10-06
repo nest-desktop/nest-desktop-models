@@ -1,7 +1,7 @@
 {
-  "id": "iaf_psc_exp",
+  "id": "gif_psc_exp",
   "elementType": "neuron",
-  "label": "IAF psc exp",
+  "label": "GIF psc exp",
   "recordables": ["E_sfa", "I_stc", "I_syn_ex", "I_syn_in", "V_m"],
   "params": [
     {
