@@ -38,7 +38,7 @@
     {
       "id": "rate",
       "label": "mean firing rate",
-      "unit": "spikes/sec",
+      "unit": "spikes/s",
       "value": 0,
       "input": "valueSlider",
       "max": 10000,
