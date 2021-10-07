@@ -1,7 +1,7 @@
 {
   "id": "tsodyks_synapse",
   "elementType": "synapse",
-  "label": "tsodyks synapse",
+  "label": "Tsodyks synapse",
   "params": [
     {
       "id": "weight",
@@ -24,8 +24,17 @@
       "step": 1
     },
     {
-      "id": "tau_fac",
-      "label": "time constant of facilitation",
+      "id": "U",
+      "label": "parameter determining the increase in u with each spike",
+      "value": 0.5,
+      "input": "valueSlider",
+      "max": 1,
+      "min": 0,
+      "step": 0.01
+    },
+    {
+      "id": "tau_psc",
+      "label": "time constant of synaptic current",
       "value": 3,
       "unit": "ms",
       "input": "valueSlider",
@@ -34,8 +43,8 @@
       "step": 1
     },
     {
-      "id": "tau_psc",
-      "label": "time constant of synaptic current",
+      "id": "tau_fac",
+      "label": "time constant for facilitation",
       "value": 0,
       "unit": "ms",
       "input": "valueSlider",
@@ -45,13 +54,31 @@
     },
     {
       "id": "tau_rec",
-      "label": "time constant of depression",
+      "label": "time constant for depression",
       "value": 800,
       "unit": "ms",
       "input": "valueSlider",
       "max": 1000,
       "min": 0,
       "step": 1
+    },
+    {
+      "id": "x",
+      "label": "initial fraction of synaptic vesicles in the readily releasable pool",
+      "value": 1,
+      "input": "valueSlider",
+      "max": 1,
+      "min": 0,
+      "step": 0.01
+    },
+    {
+      "id": "y",
+      "label": "initial fraction of synaptic vesicles in the synaptic cleft",
+      "value": 1,
+      "input": "valueSlider",
+      "max": 1,
+      "min": 0,
+      "step": 0.01
     }
   ]
 }

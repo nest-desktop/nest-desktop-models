@@ -1,7 +1,7 @@
 {
   "id": "clopath_synapse",
   "elementType": "synapse",
-  "label": "clopath synapse",
+  "label": "Clopath synapse",
   "params": [
     {
       "id": "weight",
