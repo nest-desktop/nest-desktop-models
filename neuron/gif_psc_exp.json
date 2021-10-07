@@ -55,16 +55,6 @@
       "step": 1
     },
     {
-      "id": "V_th",
-      "label": "spike threshold",
-      "unit": "mV",
-      "value": -55,
-      "input": "valueSlider",
-      "max": 100,
-      "min": -100,
-      "step": 1
-    },
-    {
       "id": "t_ref",
       "label": "duration of refractory period",
       "unit": "ms",
