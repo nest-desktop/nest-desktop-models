@@ -1,8 +1,8 @@
 {
   "abbreviation": "ppd",
-  "id": "gamma_sup_generator",
+  "id": "ppd_sup_generator",
   "elementType": "stimulator",
-  "label": "gamma sup generator",
+  "label": "ppd sup generator",
   "params": [
     {
       "id": "rate",
@@ -15,9 +15,10 @@
       "step": 1
     },
     {
-      "id": "gamma_shape",
-      "label": "shape parameter of component gamma processes",
-      "value": 1,
+      "id": "dead_time",
+      "label": "minimal time between two spikes of the component processes",
+      "unit": "ms",
+      "value": 0,
       "input": "valueSlider",
       "max": 10,
       "min": 0,
@@ -27,6 +28,25 @@
       "id": "n_proc",
       "label": "number of superimposed independent component processes",
       "value": 1,
+      "input": "valueSlider",
+      "max": 100,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "frequency",
+      "label": "rate modulation frequency",
+      "unit": "Hz",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "relative_amplitude",
+      "label": "relative rate modulation amplitude",
+      "value": 0,
       "input": "valueSlider",
       "max": 100,
       "min": 0,
