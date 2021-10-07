@@ -45,16 +45,6 @@
       "step": 1
     },
     {
-      "id": "V_th",
-      "label": "initial spike threshold",
-      "unit": "mV",
-      "value": -65,
-      "input": "valueSlider",
-      "max": 100,
-      "min": -100,
-      "step": 1
-    },
-    {
       "id": "alpha_1",
       "label": "amplitude of short time threshold adaption",
       "unit": "mV",
