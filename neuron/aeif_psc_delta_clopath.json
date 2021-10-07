@@ -1,9 +1,29 @@
 {
-  "id": "aeif_psc_alpha",
+  "id": "aeif_psc_delta_clopath",
   "elementType": "neuron",
-  "label": "AEIF psc alpha",
-  "recordables": ["I_syn_ex", "I_syn_in", "V_m", "w"],
+  "label": "AEIF psc delta clopath",
+  "recordables": ["u_bar_bar", "u_bar_minus", "u_bar_plus", "V_m", "w", "z"],
   "params": [
+    {
+      "id": "A_LTD",
+      "label": "amplitude of depression",
+      "unit": "1/mV",
+      "value": 0.00014,
+      "input": "valueSlider",
+      "max": 0.0003,
+      "min": 0,
+      "step": 0.00001
+    },
+    {
+      "id": "A_LTP",
+      "label": "amplitude of facilitation",
+      "unit": "1/mV",
+      "value": 0.00008,
+      "input": "valueSlider",
+      "max": 0.0003,
+      "min": 0,
+      "step": 0.00001
+    },
     {
       "id": "C_m",
       "label": "capacity of the membrane",
@@ -58,7 +78,7 @@
       "id": "V_peak",
       "label": "spike detection threshold",
       "unit": "mV",
-      "value": 0,
+      "value": 33,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
@@ -75,8 +95,18 @@
       "step": 1
     },
     {
-      "id": "V_th",
-      "label": "spike threshold",
+      "id": "V_th_max",
+      "label": "spike threshold after a spike",
+      "unit": "mV",
+      "value": 30.4,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 0.1
+    },
+    {
+      "id": "V_th_rest",
+      "label": "Resting value of spike threshold",
       "unit": "mV",
       "value": -50.4,
       "input": "valueSlider",
@@ -122,26 +152,6 @@
       "input": "valueSlider",
       "max": 5,
       "min": 0,
-      "step": 0.1
-    },
-    {
-      "id": "tau_syn_ex",
-      "label": "time constant of the excitatory synapse",
-      "unit": "ms",
-      "value": 0.2,
-      "input": "valueSlider",
-      "max": 4,
-      "min": 0.1,
-      "step": 0.1
-    },
-    {
-      "id": "tau_syn_in",
-      "label": "time constant of the inhibitory synapse",
-      "unit": "ms",
-      "value": 2,
-      "input": "valueSlider",
-      "max": 4,
-      "min": 0.1,
       "step": 0.1
     },
     {

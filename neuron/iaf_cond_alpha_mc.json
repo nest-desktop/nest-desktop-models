@@ -1,38 +1,59 @@
 {
-  "id": "aeif_psc_alpha",
+  "id": "iaf_cond_alpha",
   "elementType": "neuron",
-  "label": "AEIF psc alpha",
-  "recordables": ["I_syn_ex", "I_syn_in", "V_m", "w"],
+  "label": "IAF cond alpha",
+  "recordables": [
+    "g_ex.d",
+    "g_ex.p",
+    "g_ex.s",
+    "g_in.d",
+    "g_in.p",
+    "g_in.d",
+    "t_ref_remaining",
+    "V_m.d",
+    "V_m.p",
+    "V_m.s"
+  ],
   "params": [
     {
       "id": "C_m",
       "label": "capacity of the membrane",
       "unit": "pF",
-      "value": 281,
+      "value": 250,
       "input": "valueSlider",
       "max": 500,
       "min": 0,
       "step": 1
     },
     {
-      "id": "Delta_T",
-      "label": "slope factor",
-      "unit": "mV",
-      "value": 2,
-      "input": "valueSlider",
-      "max": 30,
-      "min": 1,
-      "step": 1
-    },
-    {
       "id": "E_L",
       "label": "leak reversal potential",
       "unit": "mV",
-      "value": -70.6,
+      "value": -70,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
-      "step": 0.1
+      "step": 1
+    },
+    {
+      "id": "E_ex",
+      "label": "excitatory reversal potential",
+      "unit": "mV",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "E_in",
+      "label": "inhibitory reversal potential",
+      "unit": "mV",
+      "value": -85,
+      "input": "valueSlider",
+      "max": 0,
+      "min": -100,
+      "step": 1
     },
     {
       "id": "I_e",
@@ -48,17 +69,7 @@
       "id": "V_m",
       "label": "initial membrane potential",
       "unit": "mV",
-      "value": -70.6,
-      "input": "valueSlider",
-      "max": 100,
-      "min": -100,
-      "step": 0.1
-    },
-    {
-      "id": "V_peak",
-      "label": "spike detection threshold",
-      "unit": "mV",
-      "value": 0,
+      "value": -70,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
@@ -78,39 +89,19 @@
       "id": "V_th",
       "label": "spike threshold",
       "unit": "mV",
-      "value": -50.4,
+      "value": -55,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
-      "step": 0.1
-    },
-    {
-      "id": "a",
-      "label": "subthreshold adaptation",
-      "unit": "nS",
-      "value": 4,
-      "input": "valueSlider",
-      "max": 100,
-      "min": -100,
-      "step": 0.1
-    },
-    {
-      "id": "b",
-      "label": "spike-triggered adaptation",
-      "unit": "pA",
-      "value": 80.5,
-      "input": "valueSlider",
-      "max": 100,
-      "min": -100,
-      "step": 0.1
+      "step": 1
     },
     {
       "id": "g_L",
       "label": "leak conductance",
       "unit": "nS",
-      "value": 30,
+      "value": 16.6667,
       "input": "valueSlider",
-      "max": 50,
+      "max": 30,
       "min": 1,
       "step": 1
     },
@@ -118,10 +109,10 @@
       "id": "t_ref",
       "label": "duration of refractory period",
       "unit": "ms",
-      "value": 0,
+      "value": 2,
       "input": "valueSlider",
       "max": 5,
-      "min": 0,
+      "min": 0.1,
       "step": 0.1
     },
     {
@@ -143,16 +134,6 @@
       "max": 4,
       "min": 0.1,
       "step": 0.1
-    },
-    {
-      "id": "tau_w",
-      "label": "adaptation time constant",
-      "unit": "ms",
-      "value": 144,
-      "input": "valueSlider",
-      "max": 200,
-      "min": 1,
-      "step": 1
     }
   ]
 }

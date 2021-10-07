@@ -107,7 +107,7 @@
     {
       "id": "a",
       "label": "subthreshold adaptation",
-      "unit": "ns",
+      "unit": "nS",
       "value": 4,
       "input": "valueSlider",
       "max": 100,

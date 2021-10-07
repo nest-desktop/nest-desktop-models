@@ -1,0 +1,57 @@
+{
+  "id": "tsodyks_synapse",
+  "elementType": "synapse",
+  "label": "tsodyks synapse",
+  "params": [
+    {
+      "id": "weight",
+      "label": "synaptic weight",
+      "value": 1,
+      "unit": "pA",
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    },
+    {
+      "id": "delay",
+      "label": "synaptic delay",
+      "value": 1,
+      "unit": "ms",
+      "input": "valueSlider",
+      "max": 100,
+      "min": 1,
+      "step": 1
+    },
+    {
+      "id": "tau_fac",
+      "label": "time constant of facilitation",
+      "value": 3,
+      "unit": "ms",
+      "input": "valueSlider",
+      "max": 100,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "tau_psc",
+      "label": "time constant of synaptic current",
+      "value": 0,
+      "unit": "ms",
+      "input": "valueSlider",
+      "max": 1000,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "tau_rec",
+      "label": "time constant of depression",
+      "value": 800,
+      "unit": "ms",
+      "input": "valueSlider",
+      "max": 1000,
+      "min": 0,
+      "step": 1
+    }
+  ]
+}
