@@ -1,7 +1,7 @@
 {
-  "id": "hh_psc_alpha",
+  "id": "hh_cond_exp_traub",
   "elementType": "neuron",
-  "label": "HH PSC alpha",
+  "label": "HH cond exp Traub",
   "recordables": ["Act_m", "Act_n", "I_syn_ex", "I_syn_in", "Inact_h", "V_m"],
   "params": [
     {
@@ -18,7 +18,7 @@
       "id": "E_K",
       "label": "potassium reversal potential",
       "unit": "mV",
-      "value": -77,
+      "value": -90,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
@@ -28,7 +28,7 @@
       "id": "E_L",
       "label": "leak reversal potential",
       "unit": "mV",
-      "value": -54.402,
+      "value": -60,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
@@ -39,6 +39,26 @@
       "label": "sodium reversal potential",
       "unit": "mV",
       "value": 50,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    },
+    {
+      "id": "E_ex",
+      "label": "excitatory synaptic reversal potential",
+      "unit": "mV",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    },
+    {
+      "id": "E_in",
+      "label": "inhibitory synaptic reversal potential",
+      "unit": "mV",
+      "value": -80,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
@@ -105,20 +125,40 @@
       "step": 0.1
     },
     {
-      "id": "tau_syn_ex",
-      "label": "time constant of the excitatory synapse",
+      "id": "tau_decay_ex",
+      "label": "excitatory synaptic beta function decay time",
       "unit": "ms",
-      "value": 0.2,
+      "value": 5,
+      "input": "valueSlider",
+      "max": 20,
+      "min": 0.1,
+      "step": 0.1
+    },
+    {
+      "id": "tau_decay_in",
+      "label": "inhibitory synaptic beta function decay time",
+      "unit": "ms",
+      "value": 10,
+      "input": "valueSlider",
+      "max": 20,
+      "min": 0.1,
+      "step": 0.1
+    },
+    {
+      "id": "tau_rise_ex",
+      "label": "excitatory synaptic beta function rise time",
+      "unit": "ms",
+      "value": 0.5,
       "input": "valueSlider",
       "max": 4,
       "min": 0.1,
       "step": 0.1
     },
     {
-      "id": "tau_syn_in",
-      "label": "time constant of the inhibitory synapse",
+      "id": "tau_rise_in",
+      "label": "inhibitory synaptic beta function rise time",
       "unit": "ms",
-      "value": 2,
+      "value": 0.5,
       "input": "valueSlider",
       "max": 4,
       "min": 0.1,

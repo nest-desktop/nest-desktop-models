@@ -86,7 +86,7 @@
     },
     {
       "id": "g_K",
-      "label": "potassium conductance",
+      "label": "potassium peak conductance",
       "unit": "nS",
       "value": 3600,
       "input": "valueSlider",
@@ -106,7 +106,7 @@
     },
     {
       "id": "g_Na",
-      "label": "sodium conductance",
+      "label": "sodium peak conductance",
       "unit": "nS",
       "value": 12000,
       "input": "valueSlider",

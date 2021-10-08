@@ -1,7 +1,7 @@
 {
-  "id": "hh_psc_alpha",
+  "id": "hh_psc_alpha_gap",
   "elementType": "neuron",
-  "label": "HH PSC alpha",
+  "label": "HH PSC alpha_gap",
   "recordables": ["Act_m", "Act_n", "I_syn_ex", "I_syn_in", "Inact_h", "V_m"],
   "params": [
     {
@@ -75,10 +75,30 @@
       "step": 10
     },
     {
+      "id": "g_Kv1",
+      "label": "potassium peak conductance",
+      "unit": "nS",
+      "value": 9,
+      "input": "valueSlider",
+      "max": 40,
+      "min": 1,
+      "step": 1
+    },
+    {
+      "id": "g_Kv3",
+      "label": "potassium peak conductance",
+      "unit": "nS",
+      "value": 9000,
+      "input": "valueSlider",
+      "max": 15000,
+      "min": 10,
+      "step": 10
+    },
+    {
       "id": "g_L",
       "label": "leak conductance",
       "unit": "nS",
-      "value": 30,
+      "value": 10,
       "input": "valueSlider",
       "max": 30,
       "min": 1,
@@ -88,7 +108,7 @@
       "id": "g_Na",
       "label": "sodium peak conductance",
       "unit": "nS",
-      "value": 12000,
+      "value": 4500,
       "input": "valueSlider",
       "max": 20000,
       "min": 100,

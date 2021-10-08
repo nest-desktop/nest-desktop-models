@@ -1,14 +1,14 @@
 {
-  "id": "hh_psc_alpha",
+  "id": "hh_cond_exp_traub",
   "elementType": "neuron",
-  "label": "HH PSC alpha",
+  "label": "HH cond exp Traub",
   "recordables": ["Act_m", "Act_n", "I_syn_ex", "I_syn_in", "Inact_h", "V_m"],
   "params": [
     {
       "id": "C_m",
       "label": "capacity of the membrane",
       "unit": "pF",
-      "value": 100,
+      "value": 200,
       "input": "valueSlider",
       "max": 500,
       "min": 0,
@@ -18,7 +18,7 @@
       "id": "E_K",
       "label": "potassium reversal potential",
       "unit": "mV",
-      "value": -77,
+      "value": -90,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
@@ -28,7 +28,7 @@
       "id": "E_L",
       "label": "leak reversal potential",
       "unit": "mV",
-      "value": -54.402,
+      "value": -60,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
@@ -45,10 +45,40 @@
       "step": 1
     },
     {
+      "id": "E_ex",
+      "label": "excitatory synaptic reversal potential",
+      "unit": "mV",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    },
+    {
+      "id": "E_in",
+      "label": "inhibitory synaptic reversal potential",
+      "unit": "mV",
+      "value": -80,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    },
+    {
       "id": "I_e",
       "label": "constant external input current",
       "unit": "pA",
       "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    },
+    {
+      "id": "V_T",
+      "label": "voltage offset that controls dynamics",
+      "unit": "mV",
+      "value": -63,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
