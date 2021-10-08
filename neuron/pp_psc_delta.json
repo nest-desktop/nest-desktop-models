@@ -25,15 +25,6 @@
       "step": 1
     },
     {
-      "id": "N",
-      "label": "number of represented neurons",
-      "value": 100,
-      "input": "valueSlider",
-      "max": 100,
-      "min": 1,
-      "step": 1
-    },
-    {
       "id": "c_1",
       "label": "slope of linear part of transfer function",
       "unit": "Hz/mV",
@@ -74,31 +65,11 @@
       "step": 0.1
     },
     {
-      "id": "delta_u",
-      "label": "voltage scale parameter",
-      "unit": "mV",
-      "value": 1,
-      "input": "valueSlider",
-      "max": 5,
-      "min": 0.1,
-      "step": 0.1
-    },
-    {
       "id": "q_sfa",
       "label": "adaptive threshold jump",
       "unit": "mV",
       "value": [],
       "input": "arrayInput"
-    },
-    {
-      "id": "rho_0",
-      "label": "base firing rate",
-      "unit": "1/s",
-      "value": 10,
-      "input": "valueSlider",
-      "max": 40,
-      "min": 0,
-      "step": 0.1
     },
     {
       "id": "tau_m",

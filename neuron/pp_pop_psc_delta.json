@@ -25,53 +25,6 @@
       "step": 1
     },
     {
-      "id": "c_1",
-      "label": "slope of linear part of transfer function",
-      "unit": "Hz/mV",
-      "value": 0,
-      "input": "valueSlider",
-      "max": 100,
-      "min": -100,
-      "step": 1
-    },
-    {
-      "id": "c_2",
-      "label": "prefactor of exponential part of transfer function",
-      "unit": "Hz",
-      "value": 1.238,
-      "input": "valueSlider",
-      "max": 5,
-      "min": 0,
-      "step": 0.001
-    },
-    {
-      "id": "c_3",
-      "label": "coefficient of exponential non-linearity of transfer function",
-      "unit": "1/mV",
-      "value": 0.25,
-      "input": "valueSlider",
-      "max": 2,
-      "min": 0,
-      "step": 0.1
-    },
-    {
-      "id": "dead_time",
-      "label": "duration of the dead time",
-      "unit": "ms",
-      "value": 1,
-      "input": "valueSlider",
-      "max": 5,
-      "min": 0.1,
-      "step": 0.1
-    },
-    {
-      "id": "q_sfa",
-      "label": "adaptive threshold jump",
-      "unit": "mV",
-      "value": [],
-      "input": "arrayInput"
-    },
-    {
       "id": "tau_m",
       "label": "membrane time constant",
       "unit": "ms",
@@ -80,13 +33,6 @@
       "max": 30,
       "min": 1,
       "step": 0.1
-    },
-    {
-      "id": "tau_sfa",
-      "label": "adaptive threshold time constant",
-      "unit": "ms",
-      "value": [],
-      "input": "arrayInput"
     }
   ]
 }
