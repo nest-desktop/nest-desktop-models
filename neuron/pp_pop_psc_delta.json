@@ -2,7 +2,7 @@
   "id": "pp_pop_psc_delta",
   "elementType": "neuron",
   "label": "PP pop PSC delta",
-  "recordables": ["V_m"],
+  "recordables": ["n_events", "V_m"],
   "params": [
     {
       "id": "C_m",
