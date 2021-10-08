@@ -1,7 +1,7 @@
 {
   "id": "aeif_psc_delta_clopath",
   "elementType": "neuron",
-  "label": "AEIF psc delta clopath",
+  "label": "AEIF PSC delta Clopath",
   "recordables": ["u_bar_bar", "u_bar_minus", "u_bar_plus", "V_m", "w", "z"],
   "params": [
     {

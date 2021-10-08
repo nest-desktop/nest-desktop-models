@@ -24,24 +24,22 @@
       "step": 1
     },
     {
-      "id": "tau_plus",
-      "label": "time constant of short presynaptic trace",
-      "value": 16.8,
-      "unit": "ms",
+      "id": "Aminus",
+      "label": "weight of pair depression rule",
+      "value": 0.007,
       "input": "valueSlider",
-      "max": 100,
-      "min": 0,
-      "step": 0.1
+      "max": 0.01,
+      "min": 0.001,
+      "step": 0.001
     },
     {
-      "id": "tau_plus_triplet",
-      "label": "time constant of long presynaptic trace",
-      "value": 101,
-      "unit": "ms",
+      "id": "Aminus_triplet",
+      "label": "weight of triplet depression rule",
+      "value": 0.00023,
       "input": "valueSlider",
-      "max": 200,
-      "min": 0,
-      "step": 1
+      "max": 0.001,
+      "min": 0.00001,
+      "step": 0.00001
     },
     {
       "id": "Aplus",
@@ -62,29 +60,31 @@
       "step": 0.0001
     },
     {
-      "id": "Aminus",
-      "label": "weight of pair depression rule",
-      "value": 0.007,
-      "input": "valueSlider",
-      "max": 0.01,
-      "min": 0.001,
-      "step": 0.001
-    },
-    {
-      "id": "Aminus_triplet",
-      "label": "weight of triplet depression rule",
-      "value": 0.00023,
-      "input": "valueSlider",
-      "max": 0.001,
-      "min": 0.00001,
-      "step": 0.00001
-    },
-    {
       "id": "Wmax",
       "label": "maximum allowed weight",
       "value": 100,
       "input": "valueSlider",
       "max": 100,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "tau_plus",
+      "label": "time constant of short presynaptic trace",
+      "value": 16.8,
+      "unit": "ms",
+      "input": "valueSlider",
+      "max": 100,
+      "min": 0,
+      "step": 0.1
+    },
+    {
+      "id": "tau_plus_triplet",
+      "label": "time constant of long presynaptic trace",
+      "value": 101,
+      "unit": "ms",
+      "input": "valueSlider",
+      "max": 200,
       "min": 0,
       "step": 1
     }

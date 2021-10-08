@@ -6,6 +6,16 @@
   "recordables": ["I"],
   "params": [
     {
+      "id": "frequency",
+      "label": "frequency of the sine modulation",
+      "unit": "pA",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": 0,
+      "step": 1
+    },
+    {
       "id": "mean",
       "label": "mean value of the noise current",
       "unit": "pA",
@@ -13,6 +23,16 @@
       "input": "valueSlider",
       "max": 1000,
       "min": -1000,
+      "step": 1
+    },
+    {
+      "id": "phase",
+      "label": "phase of sine modulation",
+      "unit": "deg",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 360,
+      "min": 0,
       "step": 1
     },
     {
@@ -28,26 +48,6 @@
     {
       "id": "std_mod",
       "label": "modulated standard deviation of noise current",
-      "unit": "pA",
-      "value": 0,
-      "input": "valueSlider",
-      "max": 100,
-      "min": 0,
-      "step": 1
-    },
-    {
-      "id": "phase",
-      "label": "phase of sine modulation",
-      "unit": "deg",
-      "value": 0,
-      "input": "valueSlider",
-      "max": 360,
-      "min": 0,
-      "step": 1
-    },
-    {
-      "id": "frequency",
-      "label": "frequency of the sine modulation",
       "unit": "pA",
       "value": 0,
       "input": "valueSlider",

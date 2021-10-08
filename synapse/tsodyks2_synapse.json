@@ -33,24 +33,6 @@
       "step": 0.01
     },
     {
-      "id": "u",
-      "label": "the probability of release",
-      "value": 0.5,
-      "input": "valueSlider",
-      "max": 1,
-      "min": 0,
-      "step": 0.01
-    },
-    {
-      "id": "x",
-      "label": "current scaling factor of the weight",
-      "value": 1,
-      "input": "valueSlider",
-      "max": 1,
-      "min": 0,
-      "step": 0.01
-    },
-    {
       "id": "tau_fac",
       "label": "time constant for facilitation",
       "value": 0,
@@ -69,6 +51,24 @@
       "max": 1000,
       "min": 0,
       "step": 1
+    },
+    {
+      "id": "u",
+      "label": "the probability of release",
+      "value": 0.5,
+      "input": "valueSlider",
+      "max": 1,
+      "min": 0,
+      "step": 0.01
+    },
+    {
+      "id": "x",
+      "label": "current scaling factor of the weight",
+      "value": 1,
+      "input": "valueSlider",
+      "max": 1,
+      "min": 0,
+      "step": 0.01
     }
   ]
 }

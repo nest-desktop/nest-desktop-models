@@ -5,22 +5,22 @@
   "label": "ppd sup generator",
   "params": [
     {
-      "id": "rate",
-      "label": "mean firing rate of the component processes",
-      "unit": "spikes/s",
-      "value": 0,
-      "input": "valueSlider",
-      "max": 10000,
-      "min": 0,
-      "step": 1
-    },
-    {
       "id": "dead_time",
       "label": "minimal time between two spikes of the component processes",
       "unit": "ms",
       "value": 0,
       "input": "valueSlider",
       "max": 10,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "frequency",
+      "label": "rate modulation frequency",
+      "unit": "Hz",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
       "min": 0,
       "step": 1
     },
@@ -34,12 +34,12 @@
       "step": 1
     },
     {
-      "id": "frequency",
-      "label": "rate modulation frequency",
-      "unit": "Hz",
+      "id": "rate",
+      "label": "mean firing rate of the component processes",
+      "unit": "spikes/s",
       "value": 0,
       "input": "valueSlider",
-      "max": 100,
+      "max": 10000,
       "min": 0,
       "step": 1
     },

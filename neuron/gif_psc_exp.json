@@ -1,7 +1,7 @@
 {
   "id": "gif_psc_exp",
   "elementType": "neuron",
-  "label": "GIF psc exp",
+  "label": "GIF PSC exp",
   "recordables": ["E_sfa", "I_stc", "I_syn_ex", "I_syn_in", "V_m"],
   "params": [
     {

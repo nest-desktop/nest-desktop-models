@@ -1,8 +1,8 @@
 {
   "id": "mat2_psc_exp",
   "elementType": "neuron",
-  "label": "MAT2 psc exp",
-  "recordables": ["V_th", "V_m"],
+  "label": "MAT2 PSC exp",
+  "recordables": ["V_m", "V_th"],
   "params": [
     {
       "id": "C_m",

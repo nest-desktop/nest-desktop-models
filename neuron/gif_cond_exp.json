@@ -2,7 +2,7 @@
   "id": "gif_cond_exp",
   "elementType": "neuron",
   "label": "GIF cond exp",
-  "recordables": ["E_sfa", "g_ex", "g_in", "I_stc", "V_m"],
+  "recordables": ["g_ex", "g_in", "E_sfa", "I_stc", "V_m"],
   "params": [
     {
       "id": "C_m",

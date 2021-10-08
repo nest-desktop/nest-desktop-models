@@ -24,15 +24,6 @@
       "step": 1
     },
     {
-      "id": "lambda",
-      "label": "step size",
-      "value": 0.01,
-      "input": "valueSlider",
-      "max": 1,
-      "min": 0,
-      "step": 0.01
-    },
-    {
       "id": "Wmax",
       "label": "maximum allowed weight",
       "value": 100,
@@ -51,8 +42,8 @@
       "step": 1
     },
     {
-      "id": "mu_plus",
-      "label": "weight dependency of facilitating update",
+      "id": "beta",
+      "label": "set negative offset for both updates",
       "value": 0,
       "input": "valueSlider",
       "max": 10,
@@ -60,8 +51,26 @@
       "step": 1
     },
     {
+      "id": "lambda",
+      "label": "step size",
+      "value": 0.01,
+      "input": "valueSlider",
+      "max": 1,
+      "min": 0,
+      "step": 0.01
+    },
+    {
       "id": "mu_minus",
       "label": "weight dependency of depressing update",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 10,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "mu_plus",
+      "label": "weight dependency of facilitating update",
       "value": 0,
       "input": "valueSlider",
       "max": 10,
@@ -75,15 +84,6 @@
       "unit": "ms",
       "input": "valueSlider",
       "max": 100,
-      "min": 0,
-      "step": 1
-    },
-    {
-      "id": "beta",
-      "label": "set negative offset for both updates",
-      "value": 0,
-      "input": "valueSlider",
-      "max": 10,
       "min": 0,
       "step": 1
     }

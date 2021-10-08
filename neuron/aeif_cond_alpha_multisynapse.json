@@ -1,8 +1,8 @@
 {
-  "id": "aeif_psc_alpha",
+  "id": "aeif_cond_alpha_multisynapse",
   "elementType": "neuron",
-  "label": "AEIF PSC alpha",
-  "recordables": ["I_syn_ex", "I_syn_in", "V_m", "w"],
+  "label": "AEIF cond alpha multisynapse",
+  "recordables": ["g_1", "V_m", "w"],
   "params": [
     {
       "id": "C_m",
@@ -112,6 +112,26 @@
       "input": "valueSlider",
       "max": 50,
       "min": 1,
+      "step": 1
+    },
+    {
+      "id": "g_ex",
+      "label": "excitatory synaptic conductance",
+      "unit": "nS",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 50,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "g_in",
+      "label": "inhibitory synaptic conductance",
+      "unit": "nS",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 50,
+      "min": 0,
       "step": 1
     },
     {

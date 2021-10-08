@@ -1,7 +1,7 @@
 {
   "id": "amat2_psc_exp",
   "elementType": "neuron",
-  "label": "AMAT2 psc exp",
+  "label": "AMAT2 PSC exp",
   "recordables": ["I_syn_ex", "I_syn_in", "V_m", "V_th", "V_th_v"],
   "params": [
     {

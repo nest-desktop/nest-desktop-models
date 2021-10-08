@@ -1,7 +1,7 @@
 {
   "id": "aeif_psc_exp",
   "elementType": "neuron",
-  "label": "AEIF psc exp",
+  "label": "AEIF PSC exp",
   "recordables": ["I_syn_ex", "I_syn_in", "V_m", "w"],
   "params": [
     {

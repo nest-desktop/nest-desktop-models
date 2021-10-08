@@ -1,0 +1,65 @@
+{
+  "id": "iaf_chs_2007",
+  "elementType": "neuron",
+  "label": "IAF CHS 2007",
+  "recordables": ["V_m"],
+  "params": [
+    {
+      "id": "V_epsp",
+      "label": "maximum amplitude of the EPSP",
+      "value": 0.77,
+      "input": "valueSlider",
+      "max": 10,
+      "min": 0.01,
+      "step": 0.01
+    },
+    {
+      "id": "V_m",
+      "label": "initial membrane potential",
+      "unit": "mV",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    },
+    {
+      "id": "V_noise",
+      "label": "noise scale",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    },
+    {
+      "id": "V_reset",
+      "label": "reset value of the membrane potential",
+      "value": 2.31,
+      "input": "valueSlider",
+      "max": 10,
+      "min": -10,
+      "step": 0.01
+    },
+    {
+      "id": "tau_epsp",
+      "label": "membrane time constant",
+      "unit": "ms",
+      "value": 8.5,
+      "input": "valueSlider",
+      "max": 10,
+      "min": 0.1,
+      "step": 0.1
+    },
+    {
+      "id": "tau_reset",
+      "label": "refractory time constant",
+      "unit": "ms",
+      "value": 1,
+      "input": "valueSlider",
+      "max": 4,
+      "min": 0.1,
+      "step": 0.1
+    }
+  ]
+}

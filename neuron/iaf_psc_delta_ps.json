@@ -1,26 +1,16 @@
 {
-  "id": "aeif_psc_delta",
+  "id": "iaf_psc_delta_ps",
   "elementType": "neuron",
-  "label": "AEIF PSC delta",
-  "recordables": ["V_m", "w"],
+  "label": "IAF PSC delta PS",
+  "recordables": ["V_m"],
   "params": [
     {
       "id": "C_m",
       "label": "capacity of the membrane",
       "unit": "pF",
-      "value": 281,
+      "value": 250,
       "input": "valueSlider",
       "max": 500,
-      "min": 0,
-      "step": 1
-    },
-    {
-      "id": "Delta_T",
-      "label": "slope factor",
-      "unit": "mV",
-      "value": 2,
-      "input": "valueSlider",
-      "max": 30,
       "min": 1,
       "step": 1
     },
@@ -28,11 +18,11 @@
       "id": "E_L",
       "label": "leak reversal potential",
       "unit": "mV",
-      "value": -70.6,
+      "value": -70,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
-      "step": 0.1
+      "step": 1
     },
     {
       "id": "I_e",
@@ -48,17 +38,7 @@
       "id": "V_m",
       "label": "initial membrane potential",
       "unit": "mV",
-      "value": -70.6,
-      "input": "valueSlider",
-      "max": 100,
-      "min": -100,
-      "step": 0.1
-    },
-    {
-      "id": "V_peak",
-      "label": "spike detection threshold",
-      "unit": "mV",
-      "value": 0,
+      "value": -70,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
@@ -68,7 +48,7 @@
       "id": "V_reset",
       "label": "reset potential of the membrane",
       "unit": "mV",
-      "value": -60,
+      "value": -70,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
@@ -78,61 +58,31 @@
       "id": "V_th",
       "label": "spike threshold",
       "unit": "mV",
-      "value": -50.4,
+      "value": -55,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
-      "step": 0.1
-    },
-    {
-      "id": "a",
-      "label": "subthreshold adaptation",
-      "unit": "nS",
-      "value": 4,
-      "input": "valueSlider",
-      "max": 100,
-      "min": -100,
-      "step": 0.1
-    },
-    {
-      "id": "b",
-      "label": "spike-triggered adaptation",
-      "unit": "pA",
-      "value": 80.5,
-      "input": "valueSlider",
-      "max": 100,
-      "min": -100,
-      "step": 0.1
-    },
-    {
-      "id": "g_L",
-      "label": "leak conductance",
-      "unit": "nS",
-      "value": 30,
-      "input": "valueSlider",
-      "max": 50,
-      "min": 1,
       "step": 1
     },
     {
       "id": "t_ref",
       "label": "duration of refractory period",
       "unit": "ms",
-      "value": 0,
+      "value": 2,
       "input": "valueSlider",
       "max": 5,
-      "min": 0,
+      "min": 0.1,
       "step": 0.1
     },
     {
-      "id": "tau_w",
-      "label": "adaptation time constant",
+      "id": "tau_m",
+      "label": "membrane time constant",
       "unit": "ms",
-      "value": 144,
+      "value": 10,
       "input": "valueSlider",
-      "max": 200,
+      "max": 30,
       "min": 1,
-      "step": 1
+      "step": 0.1
     }
   ]
 }
