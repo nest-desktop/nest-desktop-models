@@ -1,0 +1,28 @@
+{
+  "abbreviation": "wr",
+  "id": "weight_recorder",
+  "elementType": "recorder",
+  "label": "weight recorder",
+  "params": [
+    {
+      "id": "start",
+      "label": "start time",
+      "unit": "ms",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 10000,
+      "min": 0,
+      "step": 10
+    },
+    {
+      "id": "stop",
+      "label": "stop time",
+      "unit": "ms",
+      "value": 10000,
+      "input": "valueSlider",
+      "max": 10000,
+      "min": 0,
+      "step": 10
+    }
+  ]
+}
