@@ -41,7 +41,7 @@
     "abbreviation": "pps",
     "id": "poisson_generator_ps",
     "elementType": "stimulator",
-    "label": "Poisson generator ps",
+    "label": "Poisson generator PS",
     "params": [
       {
         "id": "dead_time",
