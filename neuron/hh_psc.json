@@ -278,7 +278,7 @@
   {
     "id": "hh_psc_alpha_gap",
     "elementType": "neuron",
-    "label": "HH PSC alpha_gap",
+    "label": "HH PSC alpha gap",
     "recordables": ["Act_m", "Act_n", "I_syn_ex", "I_syn_in", "Inact_h", "V_m"],
     "params": [
       {
