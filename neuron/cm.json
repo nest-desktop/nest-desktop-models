@@ -1,0 +1,234 @@
+{
+  "id": "cm_default",
+  "elementType": "neuron",
+  "label": "compartmental neuron",
+  "params": [
+    {
+      "id": "V_th",
+      "label": "spike threshold",
+      "unit": "mV",
+      "value": -55,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    }
+  ],
+  "compartmentParams": [
+    {
+      "id": "C_m",
+      "label": "capacitance of the compartment",
+      "unit": "µF",
+      "value": 1,
+      "input": "valueSlider",
+      "max": 10,
+      "min": 0,
+      "step": 0.1
+    },
+    {
+      "id": "g_C",
+      "label": "coupling conductance with parent compartment",
+      "unit": "µS",
+      "value": 0.01,
+      "input": "valueSlider",
+      "max": 1,
+      "min": 0.01,
+      "step": 0.01
+    },
+    {
+      "id": "g_L",
+      "label": "leak conductance of the compartment",
+      "unit": "µS",
+      "value": 0.1,
+      "input": "valueSlider",
+      "max": 1,
+      "min": 0.01,
+      "step": 0.01
+    },
+    {
+      "id": "e_L",
+      "label": "leak reversal of the compartment",
+      "unit": "mV",
+      "value": -70,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    }
+  ],
+  "receptors": [
+    {
+      "id": "AMPA",
+      "label": "AMPA",
+      "params": [
+        {
+          "id": "e_AMPA",
+          "label": "AMPA reversal",
+          "unit": "mV",
+          "value": 0,
+          "input": "valueSlider",
+          "max": 100,
+          "min": -100,
+          "step": 1
+        },
+        {
+          "id": "tau_r_AMPA",
+          "label": "AMPA rise time",
+          "unit": "ms",
+          "value": 0.2,
+          "input": "valueSlider",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1
+        },
+        {
+          "id": "tau_d_AMPA",
+          "label": "AMPA decay time",
+          "unit": "ms",
+          "value": 3,
+          "input": "valueSlider",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1
+        }
+      ]
+    },
+    {
+      "id": "GABA",
+      "label": "GABA",
+      "params": [
+        {
+          "id": "e_GABA",
+          "label": "GABA reversal",
+          "unit": "mV",
+          "value": -80,
+          "input": "valueSlider",
+          "max": 100,
+          "min": -100,
+          "step": 1
+        },
+        {
+          "id": "tau_r_GABA",
+          "label": "GABA rise time",
+          "unit": "ms",
+          "value": 0.2,
+          "input": "valueSlider",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1
+        },
+        {
+          "id": "tau_d_GABA",
+          "label": "GABA decay time",
+          "unit": "ms",
+          "value": 10,
+          "input": "valueSlider",
+          "max": 20,
+          "min": 1,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "id": "NMDA",
+      "label": "NMDA",
+      "params": [
+        {
+          "id": "e_NMDA",
+          "label": "NMDA reversal",
+          "unit": "mV",
+          "value": 0,
+          "input": "valueSlider",
+          "max": 100,
+          "min": -100,
+          "step": 1
+        },
+        {
+          "id": "tau_r_NMDA",
+          "label": "NMDA rise time",
+          "unit": "ms",
+          "value": 0.2,
+          "input": "valueSlider",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1
+        },
+        {
+          "id": "tau_d_NMDA",
+          "label": "NMDA decay time",
+          "unit": "ms",
+          "value": 43,
+          "input": "valueSlider",
+          "max": 50,
+          "min": 1,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "id": "AMPA_NMDA",
+      "label": "AMPA NMDA",
+      "params": [
+        {
+          "id": "e_AMPA_NMDA",
+          "label": "AMPA NMDA reversal",
+          "unit": "mV",
+          "value": 0,
+          "input": "valueSlider",
+          "max": 100,
+          "min": -100,
+          "step": 1
+        },
+        {
+          "id": "tau_r_AMPA",
+          "label": "AMPA rise time",
+          "unit": "ms",
+          "value": 0.2,
+          "input": "valueSlider",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1
+        },
+        {
+          "id": "tau_d_AMPA",
+          "label": "AMPA decay time",
+          "unit": "ms",
+          "value": 3,
+          "input": "valueSlider",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1
+        },
+        {
+          "id": "tau_r_NMDA",
+          "label": "AMPA NMDA rise time",
+          "unit": "ms",
+          "value": 0.2,
+          "input": "valueSlider",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1
+        },
+        {
+          "id": "tau_d_NMDA",
+          "label": "NMDA decay time",
+          "unit": "ms",
+          "value": 43,
+          "input": "valueSlider",
+          "max": 50,
+          "min": 1,
+          "step": 1
+        },
+        {
+          "id": "NMDA_ratio",
+          "label": "Ratio of NMDA vs. AMPA channels",
+          "value": 1,
+          "input": "valueSlider",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1
+        }
+      ]
+    }
+  ]
+}
