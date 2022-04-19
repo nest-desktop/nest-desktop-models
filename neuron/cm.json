@@ -18,17 +18,17 @@
     {
       "id": "C_m",
       "label": "capacitance of the compartment",
-      "unit": "µF",
-      "value": 1,
+      "unit": "pF",
+      "value": 0.01,
       "input": "valueSlider",
-      "max": 10,
+      "max": 100,
       "min": 0,
       "step": 0.1
     },
     {
       "id": "g_C",
       "label": "coupling conductance with parent compartment",
-      "unit": "µS",
+      "unit": "nS",
       "value": 0.01,
       "input": "valueSlider",
       "max": 1,
@@ -38,7 +38,7 @@
     {
       "id": "g_L",
       "label": "leak conductance of the compartment",
-      "unit": "µS",
+      "unit": "nS",
       "value": 0.1,
       "input": "valueSlider",
       "max": 1,
@@ -50,6 +50,46 @@
       "label": "leak reversal of the compartment",
       "unit": "mV",
       "value": -70,
+      "input": "valueSlider",
+      "max": 100,
+      "min": -100,
+      "step": 1
+    },
+    {
+      "id": "gbar_Na",
+      "label": "sodium maximal conductance",
+      "unit": "nS",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "e_Na",
+      "label": "sodium reversal",
+      "unit": "mV",
+      "value": 50,
+      "input": "valueSlider",
+      "max": 100,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "gbar_K",
+      "label": "potassium maximal conductance",
+      "unit": "nS",
+      "value": 0,
+      "input": "valueSlider",
+      "max": 100,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "e_K",
+      "label": "potassium reversal",
+      "unit": "mV",
+      "value": -85,
       "input": "valueSlider",
       "max": 100,
       "min": -100,
