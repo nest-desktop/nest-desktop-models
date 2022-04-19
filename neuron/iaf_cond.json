@@ -128,9 +128,9 @@
     ]
   },
   {
-    "id": "iaf_cond_alpha",
+    "id": "iaf_cond_alpha_mc",
     "elementType": "neuron",
-    "label": "IAF cond alpha",
+    "label": "IAF cond alpha MC",
     "recordables": [
       "g_ex.d",
       "g_ex.p",
