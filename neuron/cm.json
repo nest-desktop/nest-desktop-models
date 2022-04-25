@@ -2,7 +2,7 @@
   "id": "cm_default",
   "elementType": "neuron",
   "label": "compartmental neuron",
-  "recordables": ["v_comp", "n_Na_", "h_Na_", "n_K_"],
+  "recordables": ["v_comp", "m_Na_", "h_Na_", "n_K_"],
   "params": [
     {
       "id": "V_th",
