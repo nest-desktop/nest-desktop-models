@@ -214,9 +214,9 @@
       "label": "AMPA NMDA",
       "recordables": [
         "g_d_AN_AMPA_",
-        "g_d_AN_NMDA_"
+        "g_d_AN_NMDA_",
         "g_r_AN_AMPA_",
-        "g_r_AN_NMDA_",
+        "g_r_AN_NMDA_"
       ],
       "params": [
         {
