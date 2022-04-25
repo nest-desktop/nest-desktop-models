@@ -2,6 +2,7 @@
   "id": "cm_default",
   "elementType": "neuron",
   "label": "compartmental neuron",
+  "recordables": ["v_comp", "n_Na_", "h_Na_", "n_K_"],
   "params": [
     {
       "id": "V_th",
@@ -100,6 +101,7 @@
     {
       "id": "AMPA",
       "label": "AMPA",
+      "recordables": ["g_r_AMPA_", "g_d_AMPA_"],
       "params": [
         {
           "id": "e_AMPA",
@@ -136,6 +138,7 @@
     {
       "id": "GABA",
       "label": "GABA",
+      "recordables": ["g_r_GABA_", "g_d_GABA_"],
       "params": [
         {
           "id": "e_GABA",
@@ -172,6 +175,7 @@
     {
       "id": "NMDA",
       "label": "NMDA",
+      "recordables": ["g_r_NMDA_", "g_d_NMDA_"],
       "params": [
         {
           "id": "e_NMDA",
@@ -208,6 +212,12 @@
     {
       "id": "AMPA_NMDA",
       "label": "AMPA NMDA",
+      "recordables": [
+        "g_r_AN_AMPA_",
+        "g_d_AN_AMPA_",
+        "g_r_AN_NMDA_",
+        "g_d_AN_NMDA_"
+      ],
       "params": [
         {
           "id": "e_AMPA_NMDA",
