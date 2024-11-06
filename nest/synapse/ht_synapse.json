@@ -1,0 +1,55 @@
+{
+  "elementType": "synapse",
+  "id": "ht_synapse",
+  "label": "HT synapse",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "weight",
+      "label": "synaptic weight",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "pA",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "delay",
+      "label": "synaptic delay",
+      "max": 100,
+      "min": 1,
+      "step": 1,
+      "unit": "ms",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "P",
+      "label": "current size of the vesicle pool",
+      "max": 1,
+      "min": 0,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "delta_P",
+      "label": "fractional change in vesicle pool on incoming spikes",
+      "max": 1,
+      "min": 0,
+      "step": 0.001,
+      "value": 0.125
+    },
+    {
+      "component": "valueSlider",
+      "id": "tau_P",
+      "label": "synaptic vesicle pool recovery time constant",
+      "max": 1000,
+      "min": 0,
+      "step": 10,
+      "unit": "ms",
+      "value": 500
+    }
+  ]
+}

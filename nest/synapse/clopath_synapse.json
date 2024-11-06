@@ -1,0 +1,55 @@
+{
+  "elementType": "synapse",
+  "id": "clopath_synapse",
+  "label": "Clopath synapse",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "weight",
+      "label": "synaptic weight",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "pA",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "delay",
+      "label": "synaptic delay",
+      "max": 100,
+      "min": 1,
+      "step": 1,
+      "unit": "ms",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "Wmax",
+      "label": "maximum allowed weight",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "value": 10
+    },
+    {
+      "component": "valueSlider",
+      "id": "Wmin",
+      "label": "minimum allowed weight",
+      "max": 0,
+      "min": 0,
+      "step": 1,
+      "value": 10
+    },
+    {
+      "component": "valueSlider",
+      "id": "tau_x",
+      "label": "time constant of the trace of the presynaptic spike train",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 15
+    }
+  ]
+}

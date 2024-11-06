@@ -1,0 +1,74 @@
+{
+  "elementType": "synapse",
+  "id": "tsodyks2_synapse",
+  "label": "Tsodyks2 synapse",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "weight",
+      "label": "synaptic weight",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "pA",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "delay",
+      "label": "synaptic delay",
+      "max": 100,
+      "min": 1,
+      "step": 1,
+      "unit": "ms",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "U",
+      "label": "parameter determining the increase in u with each spike",
+      "max": 1,
+      "min": 0,
+      "step": 0.01,
+      "value": 0.5
+    },
+    {
+      "component": "valueSlider",
+      "id": "tau_fac",
+      "label": "time constant for facilitation",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "tau_rec",
+      "label": "time constant for depression",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 800
+    },
+    {
+      "component": "valueSlider",
+      "id": "u",
+      "label": "the probability of release",
+      "max": 1,
+      "min": 0,
+      "step": 0.01,
+      "value": 0.5
+    },
+    {
+      "component": "valueSlider",
+      "id": "x",
+      "label": "current scaling factor of the weight",
+      "max": 1,
+      "min": 0,
+      "step": 0.01,
+      "value": 1
+    }
+  ]
+}

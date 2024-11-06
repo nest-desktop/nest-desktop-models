@@ -1,0 +1,298 @@
+{
+  "compartmentParams": [
+    {
+      "component": "valueSlider",
+      "id": "C_m",
+      "label": "capacitance of the compartment",
+      "max": 100,
+      "min": 0,
+      "step": 0.1,
+      "unit": "pF",
+      "value": 0.01
+    },
+    {
+      "component": "valueSlider",
+      "id": "g_C",
+      "label": "coupling conductance with parent compartment",
+      "max": 1,
+      "min": 0.01,
+      "step": 0.01,
+      "unit": "nS",
+      "value": 0.01
+    },
+    {
+      "component": "valueSlider",
+      "id": "g_L",
+      "label": "leak conductance of the compartment",
+      "max": 1,
+      "min": 0.01,
+      "step": 0.01,
+      "unit": "nS",
+      "value": 0.1
+    },
+    {
+      "component": "valueSlider",
+      "id": "e_L",
+      "label": "leak reversal of the compartment",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "mV",
+      "value": -70
+    },
+    {
+      "component": "valueSlider",
+      "id": "gbar_Na",
+      "label": "sodium maximal conductance",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "unit": "nS",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "e_Na",
+      "label": "sodium reversal",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "unit": "mV",
+      "value": 50
+    },
+    {
+      "component": "valueSlider",
+      "id": "gbar_K",
+      "label": "potassium maximal conductance",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "unit": "nS",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "e_K",
+      "label": "potassium reversal",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "mV",
+      "value": -85
+    }
+  ],
+  "elementType": "neuron",
+  "id": "cm_default",
+  "label": "compartmental neuron",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "V_th",
+      "label": "spike threshold",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "mV",
+      "value": -55
+    }
+  ],
+  "receptors": [
+    {
+      "id": "AMPA",
+      "label": "AMPA",
+      "params": [
+        {
+          "component": "valueSlider",
+          "id": "e_AMPA",
+          "label": "AMPA reversal",
+          "max": 100,
+          "min": -100,
+          "step": 1,
+          "unit": "mV",
+          "value": 0
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_r_AMPA",
+          "label": "AMPA rise time",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1,
+          "unit": "ms",
+          "value": 0.2
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_d_AMPA",
+          "label": "AMPA decay time",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1,
+          "unit": "ms",
+          "value": 3
+        }
+      ],
+      "recordables": [
+        "g_d_AMPA_",
+        "g_r_AMPA_"
+      ]
+    },
+    {
+      "id": "GABA",
+      "label": "GABA",
+      "params": [
+        {
+          "component": "valueSlider",
+          "id": "e_GABA",
+          "label": "GABA reversal",
+          "max": 100,
+          "min": -100,
+          "step": 1,
+          "unit": "mV",
+          "value": -80
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_r_GABA",
+          "label": "GABA rise time",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1,
+          "unit": "ms",
+          "value": 0.2
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_d_GABA",
+          "label": "GABA decay time",
+          "max": 20,
+          "min": 1,
+          "step": 1,
+          "unit": "ms",
+          "value": 10
+        }
+      ],
+      "recordables": [
+        "g_d_GABA_",
+        "g_r_GABA_"
+      ]
+    },
+    {
+      "id": "NMDA",
+      "label": "NMDA",
+      "params": [
+        {
+          "component": "valueSlider",
+          "id": "e_NMDA",
+          "label": "NMDA reversal",
+          "max": 100,
+          "min": -100,
+          "step": 1,
+          "unit": "mV",
+          "value": 0
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_r_NMDA",
+          "label": "NMDA rise time",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1,
+          "unit": "ms",
+          "value": 0.2
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_d_NMDA",
+          "label": "NMDA decay time",
+          "max": 50,
+          "min": 1,
+          "step": 1,
+          "unit": "ms",
+          "value": 43
+        }
+      ],
+      "recordables": [
+        "g_d_NMDA_",
+        "g_r_NMDA_"
+      ]
+    },
+    {
+      "id": "AMPA_NMDA",
+      "label": "AMPA NMDA",
+      "params": [
+        {
+          "component": "valueSlider",
+          "id": "e_AMPA_NMDA",
+          "label": "AMPA NMDA reversal",
+          "max": 100,
+          "min": -100,
+          "step": 1,
+          "unit": "mV",
+          "value": 0
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_r_AMPA",
+          "label": "AMPA rise time",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1,
+          "unit": "ms",
+          "value": 0.2
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_d_AMPA",
+          "label": "AMPA decay time",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1,
+          "unit": "ms",
+          "value": 3
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_r_NMDA",
+          "label": "AMPA NMDA rise time",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1,
+          "unit": "ms",
+          "value": 0.2
+        },
+        {
+          "component": "valueSlider",
+          "id": "tau_d_NMDA",
+          "label": "NMDA decay time",
+          "max": 50,
+          "min": 1,
+          "step": 1,
+          "unit": "ms",
+          "value": 43
+        },
+        {
+          "component": "valueSlider",
+          "id": "NMDA_ratio",
+          "label": "Ratio of NMDA vs. AMPA channels",
+          "max": 10,
+          "min": 0.1,
+          "step": 0.1,
+          "value": 1
+        }
+      ],
+      "recordables": [
+        "g_d_AN_AMPA_",
+        "g_d_AN_NMDA_",
+        "g_r_AN_AMPA_",
+        "g_r_AN_NMDA_"
+      ]
+    }
+  ],
+  "recordables": [
+    "h_Na_",
+    "m_Na_",
+    "n_K_",
+    "v_comp"
+  ]
+}

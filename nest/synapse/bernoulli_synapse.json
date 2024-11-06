@@ -1,0 +1,36 @@
+{
+  "elementType": "synapse",
+  "id": "bernoulli_synapse",
+  "label": "Bernoulli synapse",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "weight",
+      "label": "synaptic weight",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "pA",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "delay",
+      "label": "synaptic delay",
+      "max": 100,
+      "min": 1,
+      "step": 1,
+      "unit": "ms",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "p_transmit",
+      "label": "transmission probability",
+      "max": 1,
+      "min": 0,
+      "step": 0.01,
+      "value": 1
+    }
+  ]
+}

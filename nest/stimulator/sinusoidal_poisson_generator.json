@@ -1,0 +1,71 @@
+{
+  "abbreviation": "spg",
+  "elementType": "stimulator",
+  "id": "sinusoidal_poisson_generator",
+  "label": "sinusoidal Poisson generator",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "amplitude",
+      "label": "modulation amplitude",
+      "max": 1000,
+      "min": -1000,
+      "step": 1,
+      "unit": "spikes/s",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "frequency",
+      "label": "modulation frequency",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "unit": "spikes/s",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "phase",
+      "label": "modulation phase",
+      "max": 360,
+      "min": 0,
+      "step": 1,
+      "unit": "deg",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "rate",
+      "label": "mean firing rate",
+      "max": 10000,
+      "min": 0,
+      "step": 1,
+      "unit": "spikes/s",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "start",
+      "label": "start time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "stop",
+      "label": "stop time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 1000
+    }
+  ],
+  "recordables": [
+    "rate"
+  ]
+}

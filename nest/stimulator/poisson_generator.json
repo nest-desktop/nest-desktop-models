@@ -1,0 +1,88 @@
+[
+  {
+    "abbreviation": "pg",
+    "elementType": "stimulator",
+    "id": "poisson_generator",
+    "label": "Poisson generator",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "rate",
+        "label": "mean firing rate",
+        "max": 10000,
+        "min": 0,
+        "step": 1,
+        "unit": "spikes/s",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "start",
+        "label": "start time",
+        "max": 1000,
+        "min": 0,
+        "step": 1,
+        "unit": "ms",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "stop",
+        "label": "stop time",
+        "max": 1000,
+        "min": 0,
+        "step": 1,
+        "unit": "ms",
+        "value": 1000
+      }
+    ]
+  },
+  {
+    "abbreviation": "pps",
+    "elementType": "stimulator",
+    "id": "poisson_generator_ps",
+    "label": "Poisson generator PS",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "dead_time",
+        "label": "minimal time between two spikes",
+        "max": 20,
+        "min": 0,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "rate",
+        "label": "mean firing rate",
+        "max": 10000,
+        "min": 0,
+        "step": 1,
+        "unit": "spikes/s",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "start",
+        "label": "start time",
+        "max": 1000,
+        "min": 0,
+        "step": 1,
+        "unit": "ms",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "stop",
+        "label": "stop time",
+        "max": 1000,
+        "min": 0,
+        "step": 1,
+        "unit": "ms",
+        "value": 1000
+      }
+    ]
+  }
+]

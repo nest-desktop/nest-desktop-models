@@ -1,0 +1,772 @@
+[
+  {
+    "elementType": "neuron",
+    "id": "aeif_cond_alpha",
+    "label": "AEIF cond alpha",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "C_m",
+        "label": "capacity of the membrane",
+        "max": 500,
+        "min": 0,
+        "step": 1,
+        "unit": "pF",
+        "value": 281
+      },
+      {
+        "component": "valueSlider",
+        "id": "Delta_T",
+        "label": "slope factor",
+        "max": 30,
+        "min": 1,
+        "step": 1,
+        "unit": "mV",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_L",
+        "label": "leak reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -70.6
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_ex",
+        "label": "excitatory reversal potential",
+        "max": 100,
+        "min": 0,
+        "step": 1,
+        "unit": "mV",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_in",
+        "label": "inhibitory reversal potential",
+        "max": 0,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -85
+      },
+      {
+        "component": "valueSlider",
+        "id": "I_e",
+        "label": "constant external input current",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "pA",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_m",
+        "label": "initial membrane potential",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -70.6
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_peak",
+        "label": "spike detection threshold",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_reset",
+        "label": "reset potential of the membrane",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -60
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_th",
+        "label": "spike threshold",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -50.4
+      },
+      {
+        "component": "valueSlider",
+        "id": "a",
+        "label": "subthreshold adaptation",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "nS",
+        "value": 4
+      },
+      {
+        "component": "valueSlider",
+        "id": "b",
+        "label": "spike-triggered adaptation",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "pA",
+        "value": 80.5
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_L",
+        "label": "leak conductance",
+        "max": 50,
+        "min": 1,
+        "step": 1,
+        "unit": "nS",
+        "value": 30
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_ex",
+        "label": "excitatory synaptic conductance",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "nS",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_in",
+        "label": "inhibitory synaptic conductance",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "nS",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "t_ref",
+        "label": "duration of refractory period",
+        "max": 5,
+        "min": 0,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_ex",
+        "label": "time constant of the excitatory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0.2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_in",
+        "label": "time constant of the inhibitory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_w",
+        "label": "adaptation time constant",
+        "max": 200,
+        "min": 1,
+        "step": 1,
+        "unit": "ms",
+        "value": 144
+      }
+    ],
+    "recordables": [
+      "g_ex",
+      "g_in",
+      "V_m",
+      "w"
+    ]
+  },
+  {
+    "elementType": "neuron",
+    "id": "aeif_cond_alpha_multisynapse",
+    "label": "AEIF cond alpha multisynapse",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "C_m",
+        "label": "capacity of the membrane",
+        "max": 500,
+        "min": 0,
+        "step": 1,
+        "unit": "pF",
+        "value": 281
+      },
+      {
+        "component": "valueSlider",
+        "id": "Delta_T",
+        "label": "slope factor",
+        "max": 30,
+        "min": 1,
+        "step": 1,
+        "unit": "mV",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_L",
+        "label": "leak reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -70.6
+      },
+      {
+        "component": "valueSlider",
+        "id": "I_e",
+        "label": "constant external input current",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "pA",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_m",
+        "label": "initial membrane potential",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -70.6
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_peak",
+        "label": "spike detection threshold",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_reset",
+        "label": "reset potential of the membrane",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -60
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_th",
+        "label": "spike threshold",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -50.4
+      },
+      {
+        "component": "valueSlider",
+        "id": "a",
+        "label": "subthreshold adaptation",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "nS",
+        "value": 4
+      },
+      {
+        "component": "valueSlider",
+        "id": "b",
+        "label": "spike-triggered adaptation",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "pA",
+        "value": 80.5
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_L",
+        "label": "leak conductance",
+        "max": 50,
+        "min": 1,
+        "step": 1,
+        "unit": "nS",
+        "value": 30
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_ex",
+        "label": "excitatory synaptic conductance",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "nS",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_in",
+        "label": "inhibitory synaptic conductance",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "nS",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "t_ref",
+        "label": "duration of refractory period",
+        "max": 5,
+        "min": 0,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_ex",
+        "label": "time constant of the excitatory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0.2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_in",
+        "label": "time constant of the inhibitory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_w",
+        "label": "adaptation time constant",
+        "max": 200,
+        "min": 1,
+        "step": 1,
+        "unit": "ms",
+        "value": 144
+      }
+    ],
+    "recordables": [
+      "g_1",
+      "V_m",
+      "w"
+    ]
+  },
+  {
+    "elementType": "neuron",
+    "id": "aeif_cond_beta_multisynapse",
+    "label": "AEIF cond beta multisynapse",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "C_m",
+        "label": "capacity of the membrane",
+        "max": 500,
+        "min": 0,
+        "step": 1,
+        "unit": "pF",
+        "value": 281
+      },
+      {
+        "component": "valueSlider",
+        "id": "Delta_T",
+        "label": "slope factor",
+        "max": 30,
+        "min": 1,
+        "step": 1,
+        "unit": "mV",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_L",
+        "label": "leak reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -70.6
+      },
+      {
+        "component": "valueSlider",
+        "id": "I_e",
+        "label": "constant external input current",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "pA",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_m",
+        "label": "initial membrane potential",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -70.6
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_peak",
+        "label": "spike detection threshold",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_reset",
+        "label": "reset potential of the membrane",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -60
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_th",
+        "label": "spike threshold",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -50.4
+      },
+      {
+        "component": "valueSlider",
+        "id": "a",
+        "label": "subthreshold adaptation",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "nS",
+        "value": 4
+      },
+      {
+        "component": "valueSlider",
+        "id": "b",
+        "label": "spike-triggered adaptation",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "pA",
+        "value": 80.5
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_L",
+        "label": "leak conductance",
+        "max": 50,
+        "min": 1,
+        "step": 1,
+        "unit": "nS",
+        "value": 30
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_ex",
+        "label": "excitatory synaptic conductance",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "nS",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_in",
+        "label": "inhibitory synaptic conductance",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "nS",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "t_ref",
+        "label": "duration of refractory period",
+        "max": 5,
+        "min": 0,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_ex",
+        "label": "time constant of the excitatory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0.2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_in",
+        "label": "time constant of the inhibitory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_w",
+        "label": "adaptation time constant",
+        "max": 200,
+        "min": 1,
+        "step": 1,
+        "unit": "ms",
+        "value": 144
+      }
+    ],
+    "recordables": [
+      "g_1",
+      "V_m",
+      "w"
+    ]
+  },
+  {
+    "elementType": "neuron",
+    "id": "aeif_cond_exp",
+    "label": "AEIF cond exp",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "C_m",
+        "label": "capacity of the membrane",
+        "max": 500,
+        "min": 0,
+        "step": 1,
+        "unit": "pF",
+        "value": 281
+      },
+      {
+        "component": "valueSlider",
+        "id": "Delta_T",
+        "label": "slope factor",
+        "max": 30,
+        "min": 1,
+        "step": 1,
+        "unit": "mV",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_L",
+        "label": "leak reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -70.6
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_ex",
+        "label": "excitatory reversal potential",
+        "max": 100,
+        "min": 0,
+        "step": 1,
+        "unit": "mV",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_in",
+        "label": "inhibitory reversal potential",
+        "max": 0,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -85
+      },
+      {
+        "component": "valueSlider",
+        "id": "I_e",
+        "label": "constant external input current",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "pA",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_m",
+        "label": "initial membrane potential",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -70.6
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_peak",
+        "label": "spike detection threshold",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_reset",
+        "label": "reset potential of the membrane",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -60
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_th",
+        "label": "spike threshold",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "mV",
+        "value": -50.4
+      },
+      {
+        "component": "valueSlider",
+        "id": "a",
+        "label": "subthreshold adaptation",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "nS",
+        "value": 4
+      },
+      {
+        "component": "valueSlider",
+        "id": "b",
+        "label": "spike-triggered adaptation",
+        "max": 100,
+        "min": -100,
+        "step": 0.1,
+        "unit": "pA",
+        "value": 80.5
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_L",
+        "label": "leak conductance",
+        "max": 50,
+        "min": 1,
+        "step": 1,
+        "unit": "nS",
+        "value": 30
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_ex",
+        "label": "excitatory synaptic conductance",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "nS",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_in",
+        "label": "inhibitory synaptic conductance",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "nS",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "t_ref",
+        "label": "duration of refractory period",
+        "max": 5,
+        "min": 0,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_ex",
+        "label": "time constant of the excitatory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0.2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_in",
+        "label": "time constant of the inhibitory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_w",
+        "label": "adaptation time constant",
+        "max": 200,
+        "min": 1,
+        "step": 1,
+        "unit": "ms",
+        "value": 144
+      }
+    ],
+    "recordables": [
+      "g_ex",
+      "g_in",
+      "V_m",
+      "w"
+    ]
+  }
+]

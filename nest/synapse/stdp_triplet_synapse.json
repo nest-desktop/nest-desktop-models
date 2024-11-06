@@ -1,0 +1,92 @@
+{
+  "elementType": "synapse",
+  "id": "stdp_triplet_synapse",
+  "label": "STDP triplet synapse",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "weight",
+      "label": "synaptic weight",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "pA",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "delay",
+      "label": "synaptic delay",
+      "max": 100,
+      "min": 1,
+      "step": 1,
+      "unit": "ms",
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "Aminus",
+      "label": "weight of pair depression rule",
+      "max": 0.01,
+      "min": 0.001,
+      "step": 0.001,
+      "value": 0.007
+    },
+    {
+      "component": "valueSlider",
+      "id": "Aminus_triplet",
+      "label": "weight of triplet depression rule",
+      "max": 0.001,
+      "min": 0.00001,
+      "step": 0.00001,
+      "value": 0.00023
+    },
+    {
+      "component": "valueSlider",
+      "id": "Aplus",
+      "label": "weight of pair potentiation rule",
+      "max": 1e-9,
+      "min": 1e-10,
+      "step": 1e-10,
+      "value": 5e-10
+    },
+    {
+      "component": "valueSlider",
+      "id": "Aplus_triplet",
+      "label": "weight of triplet potentiation rule",
+      "max": 0.01,
+      "min": 0.0001,
+      "step": 0.0001,
+      "value": 0.0062
+    },
+    {
+      "component": "valueSlider",
+      "id": "Wmax",
+      "label": "maximum allowed weight",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "value": 100
+    },
+    {
+      "component": "valueSlider",
+      "id": "tau_plus",
+      "label": "time constant of short presynaptic trace",
+      "max": 100,
+      "min": 0,
+      "step": 0.1,
+      "unit": "ms",
+      "value": 16.8
+    },
+    {
+      "component": "valueSlider",
+      "id": "tau_plus_triplet",
+      "label": "time constant of long presynaptic trace",
+      "max": 200,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 101
+    }
+  ]
+}
