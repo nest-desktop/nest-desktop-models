@@ -1,0 +1,39 @@
+{
+  "abbreviation": "stj",
+  "elementType": "stimulator",
+  "id": "spike_train_injector",
+  "label": "spike train injector",
+  "params": [
+    {
+      "component": "arrayInput",
+      "id": "spike_times",
+      "label": "spike times",
+      "unit": "ms"
+    },
+    {
+      "component": "arrayInput",
+      "id": "spike_multiplicities",
+      "label": "List of multiplicities of spikes, same length as spike_times"
+    },
+    {
+      "component": "valueSlider",
+      "id": "start",
+      "label": "start time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "stop",
+      "label": "stop time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 1000
+    }
+  ]
+}

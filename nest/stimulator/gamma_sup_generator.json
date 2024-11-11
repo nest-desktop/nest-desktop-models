@@ -1,0 +1,56 @@
+{
+  "abbreviation": "gsg",
+  "elementType": "stimulator",
+  "id": "gamma_sup_generator",
+  "label": "gamma sup generator",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "gamma_shape",
+      "label": "shape parameter of component gamma processes",
+      "max": 10,
+      "min": 0,
+      "step": 1,
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "n_proc",
+      "label": "number of superimposed independent component processes",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "rate",
+      "label": "mean firing rate of the component processes",
+      "max": 10000,
+      "min": 0,
+      "step": 1,
+      "unit": "spikes/s",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "start",
+      "label": "start time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "stop",
+      "label": "stop time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 1000
+    }
+  ]
+}

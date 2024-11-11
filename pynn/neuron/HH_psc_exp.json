@@ -1,0 +1,143 @@
+{
+  "elementType": "neuron",
+  "id": "hh_psc_exp",
+  "label": "HH psc exp",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "gbar_Na",
+      "label": "sodium conductance",
+      "max": 100,
+      "min": 1,
+      "step": 1,
+      "unit": "µS",
+      "value": 20
+    },
+    {
+      "component": "valueSlider",
+      "id": "gbar_K",
+      "label": "potassium conductance",
+      "max": 10,
+      "min": 0.1,
+      "step": 0.1,
+      "unit": "µS",
+      "value": 6
+    },
+    {
+      "component": "valueSlider",
+      "id": "gbar_leak",
+      "label": "leak conductance",
+      "max": 1,
+      "min": 0.01,
+      "step": 0.01,
+      "unit": "µS",
+      "value": 0.01
+    },
+    {
+      "component": "valueSlider",
+      "id": "cm",
+      "label": "capacity of the membrane",
+      "max": 2,
+      "min": 0.01,
+      "step": 0.01,
+      "unit": "nF",
+      "value": 0.2
+    },
+    {
+      "component": "valueSlider",
+      "id": "v_offset",
+      "label": "offset membrane potential",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "mV",
+      "value": -65
+    },
+    {
+      "component": "valueSlider",
+      "id": "e_rev_Na",
+      "label": "sodium reversal potential",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "mV",
+      "value": 50
+    },
+    {
+      "component": "valueSlider",
+      "id": "e_rev_K",
+      "label": "potassium reversal potential",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "mV",
+      "value": -90
+    },
+    {
+      "component": "valueSlider",
+      "id": "e_rev_leak",
+      "label": "leak reversal potential",
+      "max": 100,
+      "min": -100,
+      "step": 1,
+      "unit": "mV",
+      "value": -65
+    },
+    {
+      "component": "valueSlider",
+      "id": "e_rev_E",
+      "label": "reversal potential for excitatory input",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "unit": "mV",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "e_rev_I",
+      "label": "reversal potential for inhibitory input",
+      "max": 0,
+      "min": -100,
+      "step": 1,
+      "unit": "mV",
+      "value": -80
+    },
+    {
+      "component": "valueSlider",
+      "id": "tau_syn_E",
+      "label": "decay time of the excitatory synaptic conductance",
+      "max": 4,
+      "min": 0.1,
+      "step": 0.1,
+      "unit": "ms",
+      "value": 0.2
+    },
+    {
+      "component": "valueSlider",
+      "id": "tau_syn_I",
+      "label": "decay time of the inhibitory synaptic conductance",
+      "max": 4,
+      "min": 0.1,
+      "step": 0.1,
+      "unit": "ms",
+      "value": 2
+    },
+    {
+      "component": "valueSlider",
+      "id": "i_offset",
+      "label": "offset current",
+      "max": 10,
+      "min": -10,
+      "step": 0.01,
+      "unit": "nA",
+      "value": 0
+    }
+  ],
+  "recordables": [
+    "spikes",
+    "v",
+    "gsyn_exc",
+    "gsyn_inh"
+  ]
+}

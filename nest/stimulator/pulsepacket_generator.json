@@ -1,0 +1,52 @@
+{
+  "abbreviation": "sg",
+  "elementType": "stimulator",
+  "id": "spike_generator",
+  "label": "spike generator",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "activity",
+      "label": "number of spikes per pulse",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "value": 0
+    },
+    {
+      "component": "arrayInput",
+      "id": "pulse_times",
+      "label": "times of the centers of pulses",
+      "unit": "ms"
+    },
+    {
+      "component": "valueSlider",
+      "id": "sdev",
+      "label": "number of spikes per pulse",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "start",
+      "label": "standard deviation of spike times in each pulse",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "stop",
+      "label": "stop time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 1000
+    }
+  ]
+}

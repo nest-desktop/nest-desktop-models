@@ -1,0 +1,437 @@
+[
+  {
+    "elementType": "neuron",
+    "id": "hh_psc_alpha",
+    "label": "HH PSC alpha",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "C_m",
+        "label": "capacity of the membrane",
+        "max": 500,
+        "min": 0,
+        "step": 1,
+        "unit": "pF",
+        "value": 100
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_K",
+        "label": "potassium reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -77
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_L",
+        "label": "leak reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -54.402
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_Na",
+        "label": "sodium reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": 50
+      },
+      {
+        "component": "valueSlider",
+        "id": "I_e",
+        "label": "constant external input current",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "pA",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_m",
+        "label": "initial membrane potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -65
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_K",
+        "label": "potassium peak conductance",
+        "max": 5000,
+        "min": 10,
+        "step": 10,
+        "unit": "nS",
+        "value": 3600
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_L",
+        "label": "leak conductance",
+        "max": 30,
+        "min": 1,
+        "step": 1,
+        "unit": "nS",
+        "value": 30
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_Na",
+        "label": "sodium peak conductance",
+        "max": 20000,
+        "min": 100,
+        "step": 100,
+        "unit": "nS",
+        "value": 12000
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_ex",
+        "label": "time constant of the excitatory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0.2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_in",
+        "label": "time constant of the inhibitory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      }
+    ],
+    "recordables": [
+      "Act_m",
+      "Act_n",
+      "I_syn_ex",
+      "I_syn_in",
+      "Inact_h",
+      "V_m"
+    ]
+  },
+  {
+    "elementType": "neuron",
+    "id": "hh_psc_alpha_clopath",
+    "label": "HH PSC alpha Clopath",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "A_LTD",
+        "label": "amplitude of depression",
+        "max": 0.0003,
+        "min": 0,
+        "step": 0.00001,
+        "unit": "1/mV",
+        "value": 0.00014
+      },
+      {
+        "component": "valueSlider",
+        "id": "A_LTP",
+        "label": "amplitude of facilitation",
+        "max": 0.0003,
+        "min": 0,
+        "step": 0.00001,
+        "unit": "1/mV",
+        "value": 0.00008
+      },
+      {
+        "component": "valueSlider",
+        "id": "C_m",
+        "label": "capacity of the membrane",
+        "max": 500,
+        "min": 0,
+        "step": 1,
+        "unit": "pF",
+        "value": 100
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_K",
+        "label": "potassium reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -77
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_L",
+        "label": "leak reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -54.402
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_Na",
+        "label": "sodium reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": 50
+      },
+      {
+        "component": "valueSlider",
+        "id": "I_e",
+        "label": "constant external input current",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "pA",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_m",
+        "label": "initial membrane potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -65
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_K",
+        "label": "potassium peak conductance",
+        "max": 5000,
+        "min": 10,
+        "step": 10,
+        "unit": "nS",
+        "value": 3600
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_L",
+        "label": "leak conductance",
+        "max": 30,
+        "min": 1,
+        "step": 1,
+        "unit": "nS",
+        "value": 30
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_Na",
+        "label": "sodium peak conductance",
+        "max": 20000,
+        "min": 100,
+        "step": 100,
+        "unit": "nS",
+        "value": 12000
+      },
+      {
+        "component": "valueSlider",
+        "id": "t_ref",
+        "label": "duration of refractory period",
+        "max": 5,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_ex",
+        "label": "time constant of the excitatory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0.2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_in",
+        "label": "time constant of the inhibitory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      }
+    ],
+    "recordables": [
+      "Act_m",
+      "Act_n",
+      "I_syn_ex",
+      "I_syn_in",
+      "Inact_h",
+      "V_m"
+    ]
+  },
+  {
+    "elementType": "neuron",
+    "id": "hh_psc_alpha_gap",
+    "label": "HH PSC alpha gap",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "C_m",
+        "label": "capacity of the membrane",
+        "max": 500,
+        "min": 0,
+        "step": 1,
+        "unit": "pF",
+        "value": 100
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_K",
+        "label": "potassium reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -77
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_L",
+        "label": "leak reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -54.402
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_Na",
+        "label": "sodium reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": 50
+      },
+      {
+        "component": "valueSlider",
+        "id": "I_e",
+        "label": "constant external input current",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "pA",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_m",
+        "label": "initial membrane potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -65
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_K",
+        "label": "potassium peak conductance",
+        "max": 5000,
+        "min": 10,
+        "step": 10,
+        "unit": "nS",
+        "value": 3600
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_Kv1",
+        "label": "potassium peak conductance",
+        "max": 40,
+        "min": 1,
+        "step": 1,
+        "unit": "nS",
+        "value": 9
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_Kv3",
+        "label": "potassium peak conductance",
+        "max": 15000,
+        "min": 10,
+        "step": 10,
+        "unit": "nS",
+        "value": 9000
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_L",
+        "label": "leak conductance",
+        "max": 30,
+        "min": 1,
+        "step": 1,
+        "unit": "nS",
+        "value": 10
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_Na",
+        "label": "sodium peak conductance",
+        "max": 20000,
+        "min": 100,
+        "step": 100,
+        "unit": "nS",
+        "value": 4500
+      },
+      {
+        "component": "valueSlider",
+        "id": "t_ref",
+        "label": "duration of refractory period",
+        "max": 5,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_ex",
+        "label": "time constant of the excitatory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 0.2
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_in",
+        "label": "time constant of the inhibitory synapse",
+        "max": 4,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      }
+    ],
+    "recordables": [
+      "Act_m",
+      "Act_n",
+      "I_syn_ex",
+      "I_syn_in",
+      "Inact_h",
+      "V_m"
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "abbreviation": "ppd",
+  "elementType": "stimulator",
+  "id": "ppd_sup_generator",
+  "label": "ppd sup generator",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "dead_time",
+      "label": "minimal time between two spikes of the component processes",
+      "max": 10,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "frequency",
+      "label": "rate modulation frequency",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "unit": "Hz",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "n_proc",
+      "label": "number of superimposed independent component processes",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "rate",
+      "label": "mean firing rate of the component processes",
+      "max": 10000,
+      "min": 0,
+      "step": 1,
+      "unit": "spikes/s",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "relative_amplitude",
+      "label": "relative rate modulation amplitude",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "start",
+      "label": "start time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "stop",
+      "label": "stop time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 1000
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "abbreviation": "mip",
+  "elementType": "stimulator",
+  "id": "mip_generator",
+  "label": "MIP generator",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "p_copy",
+      "label": "copy probability",
+      "max": 1,
+      "min": 0,
+      "step": 0.01,
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "rate",
+      "label": "mean firing rate of the parent process",
+      "max": 10000,
+      "min": 0,
+      "step": 1,
+      "unit": "spikes/s",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "start",
+      "label": "start time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "stop",
+      "label": "stop time",
+      "max": 1000,
+      "min": 0,
+      "step": 1,
+      "unit": "ms",
+      "value": 1000
+    }
+  ]
+}

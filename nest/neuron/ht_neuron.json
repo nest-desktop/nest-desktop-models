@@ -1,0 +1,81 @@
+[
+  {
+    "elementType": "neuron",
+    "id": "ht_neuron",
+    "label": "HT neuron",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "E_K",
+        "label": "potassium reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -90
+      },
+      {
+        "component": "valueSlider",
+        "id": "E_Na",
+        "label": "sodium reversal potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": 30
+      },
+      {
+        "component": "valueSlider",
+        "id": "V_m",
+        "label": "initial membrane potential",
+        "max": 100,
+        "min": -100,
+        "step": 1,
+        "unit": "mV",
+        "value": -70
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_KL",
+        "label": "conductance for potassium leak current",
+        "max": 10,
+        "min": 0.01,
+        "step": 0.01,
+        "unit": "nS",
+        "value": 1
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_NaL",
+        "label": "conductance for sodium leak current",
+        "max": 10,
+        "min": 0.01,
+        "step": 0.01,
+        "unit": "nS",
+        "value": 0.2
+      },
+      {
+        "component": "valueSlider",
+        "id": "t_ref",
+        "label": "duration of refractory period",
+        "max": 5,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "ms",
+        "value": 2
+      }
+    ],
+    "recordables": [
+      "g_AMPA",
+      "g_GABA_A",
+      "g_GABA_B",
+      "g_NMDA",
+      "I_KNa",
+      "I_NaP",
+      "I_T",
+      "I_h",
+      "theta",
+      "V_m"
+    ]
+  }
+]
