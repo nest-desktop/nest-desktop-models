@@ -114,7 +114,7 @@
         "value": 200
       }
     ],
-    "recordables": [
+    "states": [
       "a",
       "i",
       "v",

@@ -82,7 +82,7 @@
         "value": 0.5
       }
     ],
-    "recordables": [
+    "states": [
       "i",
       "v",
       "z"
