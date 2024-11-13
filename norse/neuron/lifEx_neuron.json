@@ -11,6 +11,7 @@
         "max": 200,
         "min": 1,
         "step": 1,
+        "type": "float",
         "value": 100
       },
       {
@@ -20,6 +21,7 @@
         "max": 1,
         "min": 0,
         "step": 0.01,
+        "type": "torch.tensor",
         "unit": "mV",
         "value": 0
       },
@@ -30,6 +32,7 @@
         "max": 1,
         "min": 0,
         "step": 0.01,
+        "type": "torch.tensor",
         "unit": "mV",
         "value": 0
       },
@@ -40,6 +43,7 @@
         "max": 1,
         "min": 0,
         "step": 0.01,
+        "type": "torch.tensor",
         "unit": "mV",
         "value": 1
       },
@@ -50,6 +54,7 @@
         "max": 400,
         "min": 1,
         "step": 1,
+        "type": "torch.tensor",
         "unit": "1/ms",
         "value": 100
       },
@@ -60,6 +65,7 @@
         "max": 400,
         "min": 1,
         "step": 1,
+        "type": "torch.tensor",
         "unit": "1/ms",
         "value": 200
       }
@@ -71,6 +77,7 @@
         "max": 1,
         "min": 0,
         "step": 0.01,
+        "type": "torch.tensor",
         "unit": "mV",
         "value": 0.5
       }
