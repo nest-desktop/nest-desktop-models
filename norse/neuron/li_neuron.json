@@ -1,0 +1,45 @@
+{
+    "abbreviation": "leaky_integrator",
+    "elementType": "neuron",
+    "id": "LI",
+    "label": "leaky-integrator",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "tau_syn_inv",
+        "label": "inversed time constant of the synapse",
+        "max": 400,
+        "min": 1,
+        "step": 1,
+        "unit": "1/ms",
+        "type" : "torch.tensor",
+        "value": 200
+      },
+      {
+        "component": "valueSlider",
+        "id": "v_leak",
+        "label": "leak potential of the membrane",
+        "max": 1,
+        "min": 0,
+        "step": 0.01,
+        "unit": "mV",
+        "type" : "torch.tensor",
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "v_th",
+        "label": "spike threshold",
+        "max": 1,
+        "min": 0,
+        "step": 0.01,
+        "unit": "mV",
+        "type" : "torch.tensor",
+        "value": 1
+      }
+    ],
+    "states": [
+      "i",
+      "v"
+    ]
+  }
