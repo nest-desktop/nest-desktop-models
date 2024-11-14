@@ -1,5 +1,5 @@
 {
-    "abbreviation": "leaky_integrator",
+    "abbreviation": "li",
     "elementType": "neuron",
     "id": "LI",
     "label": "leaky-integrator",
