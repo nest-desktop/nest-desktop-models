@@ -11,7 +11,11 @@
       "max": 200,
       "min": 1,
       "step": 1,
+<<<<<<< HEAD
       "type": "float",
+=======
+      "type": "torch.tensor",
+>>>>>>> c36090f (Update norse models)
       "value": 100
     },
     {
