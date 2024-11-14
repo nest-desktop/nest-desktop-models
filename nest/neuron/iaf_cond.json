@@ -125,7 +125,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "g_ex",
       "g_in",
       "t_ref_remaining",
@@ -258,7 +258,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "g_ex.d",
       "g_ex.p",
       "g_ex.s",
@@ -397,7 +397,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "g_ex",
       "g_in",
       "t_ref_remaining",
@@ -550,7 +550,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "g_ex",
       "g_in",
       "t_ref_remaining",
@@ -683,7 +683,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "g_ex",
       "g_in",
       "V_m"
@@ -875,7 +875,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "g_ex",
       "g_in",
       "g_rr",

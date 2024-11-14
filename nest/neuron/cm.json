@@ -132,7 +132,7 @@
           "value": 3
         }
       ],
-      "recordables": [
+      "states": [
         "g_d_AMPA_",
         "g_r_AMPA_"
       ]
@@ -172,7 +172,7 @@
           "value": 10
         }
       ],
-      "recordables": [
+      "states": [
         "g_d_GABA_",
         "g_r_GABA_"
       ]
@@ -212,7 +212,7 @@
           "value": 43
         }
       ],
-      "recordables": [
+      "states": [
         "g_d_NMDA_",
         "g_r_NMDA_"
       ]
@@ -281,7 +281,7 @@
           "value": 1
         }
       ],
-      "recordables": [
+      "states": [
         "g_d_AN_AMPA_",
         "g_d_AN_NMDA_",
         "g_r_AN_AMPA_",
@@ -289,7 +289,7 @@
       ]
     }
   ],
-  "recordables": [
+  "states": [
     "h_Na_",
     "m_Na_",
     "n_K_",

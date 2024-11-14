@@ -115,7 +115,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "g_ex",
       "g_in",
       "E_sfa",
@@ -219,7 +219,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "E_sfa",
       "I_stc",
       "V_m"

@@ -65,7 +65,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "g_AMPA",
       "g_GABA_A",
       "g_GABA_B",

@@ -115,7 +115,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "Act_m",
       "Act_n",
       "I_syn_ex",
@@ -270,7 +270,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "Act_m",
       "Act_n",
       "I_syn_ex",
@@ -425,7 +425,7 @@
         "value": 2
       }
     ],
-    "recordables": [
+    "states": [
       "Act_m",
       "Act_n",
       "I_syn_ex",

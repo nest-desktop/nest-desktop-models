@@ -114,7 +114,7 @@
       "value": 1
     }
   ],
-  "recordables": [
+  "states": [
     "g_ahp",
     "g_ex",
     "g_in",

@@ -155,7 +155,7 @@
         "value": 144
       }
     ],
-    "recordables": [
+    "states": [
       "I_syn_ex",
       "I_syn_in",
       "V_m",
@@ -298,7 +298,7 @@
         "value": 144
       }
     ],
-    "recordables": [
+    "states": [
       "V_m",
       "w"
     ]
@@ -469,7 +469,7 @@
         "value": 144
       }
     ],
-    "recordables": [
+    "states": [
       "u_bar_bar",
       "u_bar_minus",
       "u_bar_plus",
@@ -634,7 +634,7 @@
         "value": 144
       }
     ],
-    "recordables": [
+    "states": [
       "I_syn_ex",
       "I_syn_in",
       "V_m",

@@ -65,7 +65,7 @@
         "value": 3.75
       }
     ],
-    "recordables": [
+    "states": [
       "ASCurrents_sum",
       "I",
       "I_syn",

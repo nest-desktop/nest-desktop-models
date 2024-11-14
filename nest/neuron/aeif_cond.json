@@ -195,7 +195,7 @@
         "value": 144
       }
     ],
-    "recordables": [
+    "states": [
       "g_ex",
       "g_in",
       "V_m",
@@ -378,7 +378,7 @@
         "value": 144
       }
     ],
-    "recordables": [
+    "states": [
       "g_1",
       "V_m",
       "w"
@@ -560,7 +560,7 @@
         "value": 144
       }
     ],
-    "recordables": [
+    "states": [
       "g_1",
       "V_m",
       "w"
@@ -762,7 +762,7 @@
         "value": 144
       }
     ],
-    "recordables": [
+    "states": [
       "g_ex",
       "g_in",
       "V_m",
