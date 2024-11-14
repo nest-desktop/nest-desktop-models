@@ -2,7 +2,7 @@
     "abbreviation": "lif_ex",
     "elementType": "neuron",
     "id": "LIFEx",
-    "label": "leaky-integrate-and-fire-adaptive-exponential",
+    "label": "leaky-integrate-and-fire-exponential",
     "params": [
       {
         "component": "valueSlider",
