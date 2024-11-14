@@ -21,8 +21,8 @@
       "max": 1,
       "min": 0,
       "step": 0.01,
-      "unit": "mV",
       "type": "torch.tensor",
+      "unit": "mV",
       "value": 0.5
     },
     {
