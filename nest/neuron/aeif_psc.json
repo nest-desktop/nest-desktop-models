@@ -155,12 +155,7 @@
         "value": 144
       }
     ],
-    "states": [
-      "I_syn_ex",
-      "I_syn_in",
-      "V_m",
-      "w"
-    ]
+    "states": ["I_syn_ex", "I_syn_in", "V_m", "w"]
   },
   {
     "elementType": "neuron",
@@ -298,10 +293,7 @@
         "value": 144
       }
     ],
-    "states": [
-      "V_m",
-      "w"
-    ]
+    "states": ["V_m", "w"]
   },
   {
     "elementType": "neuron",
@@ -469,14 +461,7 @@
         "value": 144
       }
     ],
-    "states": [
-      "u_bar_bar",
-      "u_bar_minus",
-      "u_bar_plus",
-      "V_m",
-      "w",
-      "z"
-    ]
+    "states": ["u_bar_bar", "u_bar_minus", "u_bar_plus", "V_m", "w", "z"]
   },
   {
     "elementType": "neuron",
@@ -634,11 +619,6 @@
         "value": 144
       }
     ],
-    "states": [
-      "I_syn_ex",
-      "I_syn_in",
-      "V_m",
-      "w"
-    ]
+    "states": ["I_syn_ex", "I_syn_in", "V_m", "w"]
   }
 ]

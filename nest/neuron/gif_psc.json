@@ -85,13 +85,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "E_sfa",
-      "I_stc",
-      "I_syn_ex",
-      "I_syn_in",
-      "V_m"
-    ]
+    "states": ["E_sfa", "I_stc", "I_syn_ex", "I_syn_in", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -179,10 +173,6 @@
         "value": 2
       }
     ],
-    "states": [
-      "E_sfa",
-      "I_stc",
-      "V_m"
-    ]
+    "states": ["E_sfa", "I_stc", "V_m"]
   }
 ]

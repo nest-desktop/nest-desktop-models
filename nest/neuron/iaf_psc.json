@@ -105,11 +105,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "I_syn_ex",
-      "I_syn_in",
-      "V_m"
-    ]
+    "states": ["I_syn_ex", "I_syn_in", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -197,11 +193,7 @@
         "value": 10
       }
     ],
-    "states": [
-      "I_syn",
-      "I_syn_1",
-      "V_m"
-    ]
+    "states": ["I_syn", "I_syn_1", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -309,11 +301,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "I_syn_ex",
-      "I_syn_in",
-      "V_m"
-    ]
+    "states": ["I_syn_ex", "I_syn_in", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -401,9 +389,7 @@
         "value": 10
       }
     ],
-    "states": [
-      "V_m"
-    ]
+    "states": ["V_m"]
   },
   {
     "elementType": "neuron",
@@ -491,9 +477,7 @@
         "value": 10
       }
     ],
-    "states": [
-      "V_m"
-    ]
+    "states": ["V_m"]
   },
   {
     "elementType": "neuron",
@@ -601,11 +585,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "I_syn_ex",
-      "I_syn_in",
-      "V_m"
-    ]
+    "states": ["I_syn_ex", "I_syn_in", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -713,11 +693,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "I_syn_ex",
-      "I_syn_in",
-      "V_m"
-    ]
+    "states": ["I_syn_ex", "I_syn_in", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -805,11 +781,7 @@
         "value": 10
       }
     ],
-    "states": [
-      "I_syn",
-      "I_syn_1",
-      "V_m"
-    ]
+    "states": ["I_syn", "I_syn_1", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -917,10 +889,6 @@
         "value": 2
       }
     ],
-    "states": [
-      "I_syn_ex",
-      "I_syn_in",
-      "V_m"
-    ]
+    "states": ["I_syn_ex", "I_syn_in", "V_m"]
   }
 ]

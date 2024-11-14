@@ -114,13 +114,5 @@
       "value": 1
     }
   ],
-  "states": [
-    "g_ahp",
-    "g_ex",
-    "g_in",
-    "I_ahp",
-    "I_syn_ex",
-    "I_syn_in",
-    "V_m"
-  ]
+  "states": ["g_ahp", "g_ex", "g_in", "I_ahp", "I_syn_ex", "I_syn_in", "V_m"]
 }

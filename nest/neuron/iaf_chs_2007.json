@@ -61,7 +61,5 @@
       "value": 1
     }
   ],
-  "states": [
-    "V_m"
-  ]
+  "states": ["V_m"]
 }

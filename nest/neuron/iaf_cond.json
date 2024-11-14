@@ -125,12 +125,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "g_ex",
-      "g_in",
-      "t_ref_remaining",
-      "V_m"
-    ]
+    "states": ["g_ex", "g_in", "t_ref_remaining", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -397,12 +392,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "g_ex",
-      "g_in",
-      "t_ref_remaining",
-      "V_m"
-    ]
+    "states": ["g_ex", "g_in", "t_ref_remaining", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -550,12 +540,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "g_ex",
-      "g_in",
-      "t_ref_remaining",
-      "V_m"
-    ]
+    "states": ["g_ex", "g_in", "t_ref_remaining", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -683,11 +668,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "g_ex",
-      "g_in",
-      "V_m"
-    ]
+    "states": ["g_ex", "g_in", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -875,12 +856,6 @@
         "value": 2
       }
     ],
-    "states": [
-      "g_ex",
-      "g_in",
-      "g_rr",
-      "g_sfa",
-      "V_m"
-    ]
+    "states": ["g_ex", "g_in", "g_rr", "g_sfa", "V_m"]
   }
 ]

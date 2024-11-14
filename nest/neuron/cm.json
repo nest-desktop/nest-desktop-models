@@ -132,10 +132,7 @@
           "value": 3
         }
       ],
-      "states": [
-        "g_d_AMPA_",
-        "g_r_AMPA_"
-      ]
+      "states": ["g_d_AMPA_", "g_r_AMPA_"]
     },
     {
       "id": "GABA",
@@ -172,10 +169,7 @@
           "value": 10
         }
       ],
-      "states": [
-        "g_d_GABA_",
-        "g_r_GABA_"
-      ]
+      "states": ["g_d_GABA_", "g_r_GABA_"]
     },
     {
       "id": "NMDA",
@@ -212,10 +206,7 @@
           "value": 43
         }
       ],
-      "states": [
-        "g_d_NMDA_",
-        "g_r_NMDA_"
-      ]
+      "states": ["g_d_NMDA_", "g_r_NMDA_"]
     },
     {
       "id": "AMPA_NMDA",
@@ -281,18 +272,8 @@
           "value": 1
         }
       ],
-      "states": [
-        "g_d_AN_AMPA_",
-        "g_d_AN_NMDA_",
-        "g_r_AN_AMPA_",
-        "g_r_AN_NMDA_"
-      ]
+      "states": ["g_d_AN_AMPA_", "g_d_AN_NMDA_", "g_r_AN_AMPA_", "g_r_AN_NMDA_"]
     }
   ],
-  "states": [
-    "h_Na_",
-    "m_Na_",
-    "n_K_",
-    "v_comp"
-  ]
+  "states": ["h_Na_", "m_Na_", "n_K_", "v_comp"]
 }

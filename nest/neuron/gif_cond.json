@@ -115,13 +115,7 @@
         "value": 2
       }
     ],
-    "states": [
-      "g_ex",
-      "g_in",
-      "E_sfa",
-      "I_stc",
-      "V_m"
-    ]
+    "states": ["g_ex", "g_in", "E_sfa", "I_stc", "V_m"]
   },
   {
     "elementType": "neuron",
@@ -219,10 +213,6 @@
         "value": 2
       }
     ],
-    "states": [
-      "E_sfa",
-      "I_stc",
-      "V_m"
-    ]
+    "states": ["E_sfa", "I_stc", "V_m"]
   }
 ]

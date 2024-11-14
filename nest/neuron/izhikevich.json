@@ -82,8 +82,5 @@
       "value": 8
     }
   ],
-  "states": [
-    "U_m",
-    "V_m"
-  ]
+  "states": ["U_m", "V_m"]
 }
