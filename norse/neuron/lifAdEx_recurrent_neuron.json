@@ -1,8 +1,8 @@
 {
     "abbreviation": "lif_adex",
     "elementType": "neuron",
-    "id": "LIFAdEx",
-    "label": "leaky-integrate-and-fire-adaptive-exponential",
+    "id": "LIFAdExRecurrent",
+    "label": "leaky-integrate-and-fire-adaptive-exponential-recurrent",
     "params": [
       {
         "component": "valueSlider",
