@@ -1,43 +1,41 @@
 {
-    "abbreviation": "iaf",
-    "elementType": "neuron",
-    "id": "IAF",
-    "label": "integrate-and-fire",
-    "params": [
-      {
-        "component": "valueSlider",
-        "id": "alpha",
-        "label": "alpha",
-        "max": 200,
-        "min": 1,
-        "step": 1,
-        "type" : "float",
-        "value": 100
-      },
-      {
-        "component": "valueSlider",
-        "id": "v_reset",
-        "label": "reset potential of the membrane",
-        "max": 1,
-        "min": 0,
-        "step": 0.01,
-        "unit": "mV",
-        "type" : "torch.tensor",
-        "value": 0
-      },
-      {
-        "component": "valueSlider",
-        "id": "v_th",
-        "label": "spike threshold",
-        "max": 1,
-        "min": 0,
-        "step": 0.01,
-        "unit": "mV",
-        "type" : "torch.tensor",
-        "value": 1
-      }
-    ],
-    "states": [
-      "v"
-    ]
-  }
+  "abbreviation": "iaf",
+  "elementType": "neuron",
+  "id": "IAF",
+  "label": "integrate-and-fire",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "alpha",
+      "label": "alpha",
+      "max": 200,
+      "min": 1,
+      "step": 1,
+      "type": "float",
+      "value": 100
+    },
+    {
+      "component": "valueSlider",
+      "id": "v_reset",
+      "label": "reset potential of the membrane",
+      "max": 1,
+      "min": 0,
+      "step": 0.01,
+      "unit": "mV",
+      "type": "torch.tensor",
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "v_th",
+      "label": "spike threshold",
+      "max": 1,
+      "min": 0,
+      "step": 0.01,
+      "unit": "mV",
+      "type": "torch.tensor",
+      "value": 1
+    }
+  ],
+  "states": ["v"]
+}

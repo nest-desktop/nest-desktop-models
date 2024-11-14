@@ -34,8 +34,5 @@
       "unit": "ms",
       "value": 1E10
     }
-  ],
-  "recordables": [
-    "spikes"
   ]
 }

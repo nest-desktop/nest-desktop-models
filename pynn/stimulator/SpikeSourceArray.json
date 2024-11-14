@@ -10,8 +10,5 @@
       "label": "spike times",
       "unit": "ms"
     }
-  ],
-  "recordables": [
-    "spikes"
   ]
 }

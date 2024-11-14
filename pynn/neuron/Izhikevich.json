@@ -52,7 +52,7 @@
       "value": 0
     }
   ],
-  "recordables": [
+  "states": [
     "spikes",
     "v",
     "u"
