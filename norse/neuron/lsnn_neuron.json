@@ -5,6 +5,12 @@
     "label": "long short-term memory",
     "params": [
         {
+            "component": "checkbox",
+            "id": "adjoint",
+            "label": "adjoint",
+            "value": false
+        },
+        {
             "component": "valueSlider",
             "id": "alpha",
             "label": "alpha",
