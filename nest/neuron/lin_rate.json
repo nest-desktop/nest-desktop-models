@@ -1,0 +1,164 @@
+[
+  {
+  "elementType": "neuron",
+  "id": "lin_rate_opn",
+  "label": "Linear rate (output noise)",
+  "params": [
+    {
+      "component": "valueSlider",
+      "id": "g",
+      "label": "gain parameter",
+      "max": 5,
+      "min": 0.1,
+      "step": 10.1,
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "g_ex",
+      "label": "linear factor in multiplicative coupling",
+      "max": 5,
+      "min": 0.1,
+      "step": 0.1,
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "g_in",
+      "label": "linear factor in multiplicative coupling",
+      "max": 5,
+      "min": 0.1,
+      "step": 0.1,
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "mu",
+      "label": "mean input",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "value": 2
+    },
+    {
+      "component": "valueSlider",
+      "id": "sigma",
+      "label": "noise parameter",
+      "max": 100,
+      "min": 0,
+      "step": 1,
+      "value": 1
+    },
+    {
+      "component": "valueSlider",
+      "id": "tau",
+      "label": "time constant",
+      "max": 100,
+      "min": 1,
+      "step": 1,
+      "unit": "ms",
+      "value": 10
+    },
+    {
+      "component": "valueSlider",
+      "id": "theta_ex",
+      "label": "shift in multiplicative coupling",
+      "max": 5,
+      "min": 0,
+      "step": 0.1,
+      "value": 0
+    },
+    {
+      "component": "valueSlider",
+      "id": "theta_in",
+      "label": "shift in multiplicative coupling",
+      "max": 5,
+      "min": 0,
+      "step": 0.1,
+      "value": 0
+    }
+  ],
+  "states": ["noise", "noisy_rate", "rate"]
+  },
+  {
+    "elementType": "neuron",
+    "id": "lin_rate_ipn",
+    "label": "Linear rate (input noise)",
+    "params": [
+      {
+        "component": "valueSlider",
+        "id": "g",
+        "label": "gain parameter",
+        "max": 5,
+        "min": 0.1,
+        "step": 10.1,
+        "value": 1
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_ex",
+        "label": "Linear factor in multiplicative coupling",
+        "max": 5,
+        "min": 0.1,
+        "step": 0.1,
+        "value": 1
+      },
+      {
+        "component": "valueSlider",
+        "id": "g_in",
+        "label": "Linear factor in multiplicative coupling",
+        "max": 5,
+        "min": 0.1,
+        "step": 0.1,
+        "value": 1
+      },
+      {
+        "component": "valueSlider",
+        "id": "mu",
+        "label": "mean input",
+        "max": 100,
+        "min": 0,
+        "step": 1,
+        "value": 2
+      },
+      {
+        "component": "valueSlider",
+        "id": "sigma",
+        "label": "noise parameter",
+        "max": 100,
+        "min": 0,
+        "step": 1,
+        "value": 1
+      },
+      {
+        "component": "valueSlider",
+        "id": "tau",
+        "label": "time constant",
+        "max": 100,
+        "min": 1,
+        "step": 1,
+        "unit": "ms",
+        "value": 10
+      },
+      {
+        "component": "valueSlider",
+        "id": "theta_ex",
+        "label": "shift in multiplicative coupling",
+        "max": 5,
+        "min": 0,
+        "step": 0.1,
+        "value": 0
+      },
+      {
+        "component": "valueSlider",
+        "id": "theta_in",
+        "label": "shift in multiplicative coupling",
+        "max": 5,
+        "min": 0,
+        "step": 0.1,
+        "value": 0
+      }
+    ],
+  "states": ["noise", "rate"]
+  }
+]
